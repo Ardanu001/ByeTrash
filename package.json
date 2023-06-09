@@ -1,0 +1,19 @@
+{
+  "name": "byetrash",
+  "version": "1.0.0",
+  "description": "Capstone Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ardanu001/ByeTrash.git"
+  },
+  "author": "Dea Ayuninda, Ardanu, Mochammad Alif Prayogo, Ahmad Fadhil Kurniahadi Al Jufri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ardanu001/ByeTrash/issues"
+  },
+  "homepage": "https://github.com/Ardanu001/ByeTrash#readme"
+}
