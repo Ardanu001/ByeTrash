@@ -1,4 +1,2 @@
 # ByeTrash
 ByeTrash
-
-BHJBHJDFBHJBHJ
