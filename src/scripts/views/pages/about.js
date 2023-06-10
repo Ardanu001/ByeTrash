@@ -1,7 +1,7 @@
 const About = {
   async render() {
     return `
-    <div class="container">
+    <div class="about-container">
       <div class="section">
         <div class="about-section">
           <div class="">

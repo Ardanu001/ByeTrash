@@ -1,7 +1,7 @@
 const Service = {
   async render() {
     return `
-    <div class="container">
+    <div class="service-container">
       <div class="service">
         <div class="service-description">
           <h2>TUKARKAN SAMPAH DI BYETRASH</h2>
