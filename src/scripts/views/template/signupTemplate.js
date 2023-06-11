@@ -4,7 +4,7 @@ const signupTemplate = () => `
 <div class="signPage__bar">
     <div class="signPage__bar-back">
         <img src="../public/logo/back-icon.svg" alt="Kembali Ke Beranda" aria-label="Kembali Ke Beranda"/>
-        <a>Kembali</a>
+        <a href="#/homepage">Kembali</a>
     </div>
     <img class="signPage__bar-logo" src="../public/logo/logo_byetrash.svg" alt="ByeTrash Logo" aria-label="ByeTrash Logo"/>
 </div>
