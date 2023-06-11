@@ -3,10 +3,10 @@ const loginTemplate = () =>
         <div class="loginPage">
             <div class="loginPage__bar">
                 <div class="loginPage__bar-back">
-                    <img alt="back-icon" aria-label="Kembali Ke Beranda" src="./public/img/logo/back-icon.svg" />
-                    <a href="#">Kembali</a>
+                    <img alt="back-icon" aria-label="Kembali Ke Beranda" src="../public/logo/back-icon.svg" />
+                    <a href="#/homepage">Kembali</a>
                 </div>
-                <img class="loginPage__bar-logo" alt="Logo Website ByeTrash" src="./public/img/logo/logo_byetrash.svg"/>
+                <img class="loginPage__bar-logo" alt="Logo Website ByeTrash" src="../public/logo/logo_byetrash.svg"/>
             </div>
                 <div class="loginPage__title">
                     <h1>Login</h1>
@@ -23,7 +23,7 @@ const loginTemplate = () =>
                     </div>
                     <div class="loginPage__check">
                         <div class="loginPage__check-check">
-                            <input type="checkbox" class="loginPage__check-check" />
+                            <input type="checkbox" class="checkBox" />
                             <p>Show Password</p>
                         </div>
                         <a id="forgotPassword">Lupa Password?</a>

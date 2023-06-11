@@ -11,7 +11,7 @@
     right: 0;
     bottom: 0;
     border: none;
-    display: none;
+    display: flex;
     border-radius: 0;
     background-color: rgba(48, 83, 49, 0.534);
 }
@@ -115,10 +115,24 @@
     display: flex;
     flex-direction: row;
     align-self: center;
+    
 }
 
 .loginPage__check-check p {
-    padding-left: 3px;
+    padding-left: 8px;
+    font-size: 16px;
+}
+
+.checkBox {
+    width: 25px;
+    height: 25px;
+    border-color: #303B1D;
+    border: solid 2px;
+}
+
+.checkBox:focus {
+    background-color: #3c8f16;
+    border: none;
 }
 
 .loginPage__check {
@@ -199,6 +213,10 @@
         font-size: 12px;
     }
 
+    .loginPage__check-check p {
+        font-size: 12px;
+    }
+
     #login {
         font-size: 12px;
     }
@@ -206,5 +224,12 @@
     .loginPage__bar-logo {
         width: 110px;
         height: 30px;
+    }
+
+    .checkBox {
+        width: 20px;
+        height: 20px;
+        border-color: #303B1D;
+        border: solid 2px;
     }
 }
