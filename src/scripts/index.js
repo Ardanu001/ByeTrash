@@ -5,6 +5,8 @@ import app from './views/app';
 
 const App = new app({
     content: document.querySelector('main'),
+    button: document.querySelector('.navbar-toggler'),
+    form: document.querySelector('#form'),
 });
 
 window.addEventListener('hashchange', () => {
