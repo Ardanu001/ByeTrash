@@ -1,5 +1,6 @@
 import '../styles/login.css';
 import '../styles/main.css';
+import '../styles/signup.css';
 import 'regenerator-runtime';
 import app from './views/app';
 

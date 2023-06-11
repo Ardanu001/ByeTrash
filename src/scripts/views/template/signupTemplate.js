@@ -3,10 +3,10 @@ const signupTemplate = () => `
 <div class="signPage">
 <div class="signPage__bar">
     <div class="signPage__bar-back">
-        <img src="./img/icon/back-icon.svg" alt="Kembali Ke Beranda" aria-label="Kembali Ke Beranda"/>
+        <img src="../public/logo/back-icon.svg" alt="Kembali Ke Beranda" aria-label="Kembali Ke Beranda"/>
         <a>Kembali</a>
     </div>
-    <img class="signPage__bar-logo" src="./img/logo/logo_byetrash.png" alt="ByeTrash Logo" aria-label="ByeTrash Logo"/>
+    <img class="signPage__bar-logo" src="../public/logo/logo_byetrash.svg" alt="ByeTrash Logo" aria-label="ByeTrash Logo"/>
 </div>
 <div class="signPage__title">
     <h1>Sign Up</h1>
@@ -51,7 +51,7 @@ const signupTemplate = () => `
                 <button id="btn-signUp">Register</button>
             </div>
             <div class="signPage__loginPart">
-                <p>Sudah Punya Akun? <a id="signUp" href="../Tampilan Login/form login.html">Masuk Disini</a></p>
+                <p>Sudah Punya Akun? <a id="signUp" href="#/loginpage">Masuk Disini</a></p>
             </div>
         </div>
     </form>

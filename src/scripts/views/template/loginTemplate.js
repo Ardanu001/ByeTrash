@@ -33,7 +33,7 @@ const loginTemplate = () =>
                     </div>
                 </form>
                 <div class="loginPage__signPart">
-                    <p>Belum Punya Akun? <a id="login" href="../Tampilan Sign Up/sign form.html">Daftar Disini</a></p>
+                    <p>Belum Punya Akun? <a id="login" href="#/signuppage">Daftar Disini</a></p>
                 </div>
             </div>
         </div>
