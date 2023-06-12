@@ -16,4 +16,4 @@ window.addEventListener('hashchange', () => {
 
 window.addEventListener('load', () => {
     App.renderpage();
-})
+});

@@ -8,8 +8,8 @@ const DrawerInitiator = {
   
       content.addEventListener('click', (event) => {
         event.stopPropagation();
-        button.removeAttribute('data-bs-toggle');
-        button.removeAttribute('data-bs-target');
+        button.setAttribute('data-bs-toggle','');
+        button.setAttribute('data-bs-target','');
       });
     },
   };

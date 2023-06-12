@@ -93,11 +93,11 @@ const homeTemplate = () => `
         <h2>Panduan BYETRASH</h2>
       </div>
     </div>
-    <img src="../public/pict/thumb1.png" class="img-fluid" alt="" />
+    <img src="../public/pict/thumb1.png" class="img-fluid lazyload" alt="" />
   </div>
 </section>
 
-<!-- Panduan wbsite end -->
+<!-- Panduan website end -->
 
 <!--Google map-->
 <section id="maps" style="background-color: #fff">
