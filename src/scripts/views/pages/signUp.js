@@ -6,7 +6,7 @@ const signUpForm = {
            `;
        },
    
-       async getRender(){
+       async afterRender(){
            const homeContainer = document.querySelector('#form');
            homeContainer.innerHTML = signupTemplate();
            const checkBox = document.getElementById('checkSign');

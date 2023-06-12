@@ -17,3 +17,11 @@ window.addEventListener('hashchange', () => {
 window.addEventListener('load', () => {
     App.renderpage();
 });
+
+window.addEventListener('click', () => {
+    App.renderform();
+});
+
+window.addEventListener('load', () => {
+    App.renderform();
+});
