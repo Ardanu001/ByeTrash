@@ -26,6 +26,7 @@
     "css-loader": "^6.8.1",
     "express": "^4.18.2",
     "html-webpack-plugin": "^5.5.2",
+    "lazyload": "^2.0.0-rc.2",
     "regenerator-runtime": "^0.13.11",
     "style-loader": "^3.3.3",
     "webpack": "^5.86.0",
