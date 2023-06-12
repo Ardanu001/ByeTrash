@@ -12,6 +12,9 @@ const signUpForm = {
            const checkBox = document.getElementById('checkSign');
             const input = document.getElementById('passSign');
             const textMsg = document.getElementById('showPass');
+            const pass = document.querySelector('.pass1');
+            const confirmpass = document.querySelector('.pass2');
+            const buttonSign = document.getElementById('btn-signUp');
 
             checkBox.onclick = () => {
                 if (checkBox.checked){
