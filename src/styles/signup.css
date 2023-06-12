@@ -2,6 +2,9 @@
     box-sizing: border-box;
 }
 
+body{
+  padding-top: 100px;
+}
 .signup {
     position: absolute;
     justify-content: center;
