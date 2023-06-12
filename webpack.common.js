@@ -1,14 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const path = require('path');
-const express = require('express');
-const app = express();
-
-const dir = path.join(__dirname, 'src/public');
-app.use(express.static(dir));
-app.listen(3000 = () => {
-  console.log('Listening On Local Host');
-});
 
 module.exports = {
   entry: {
