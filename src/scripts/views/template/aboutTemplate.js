@@ -5,7 +5,7 @@ const aboutTemplate = () => `
         <div class="">
           <h2>TENTANG BYTRASH</h2>
           <p>
-            Byetrahs adalah website yang memfasilitasi masyarakat untuk
+            Byetrash adalah website yang memfasilitasi masyarakat untuk
             mengelola sampah supaya bisa mengurangi polusi. Di website ini
             masyarakat bisa menukarkan sampah yang mereka miliki menjadi uang
             tunai berdasarkan jenis sampah yang ditukarkan. Dengan adanya

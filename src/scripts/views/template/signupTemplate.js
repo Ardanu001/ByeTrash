@@ -3,10 +3,10 @@ const signupTemplate = () => `
 <div class="signPage">
 <div class="signPage__bar">
     <div class="signPage__bar-back">
-        <img src="../public/logo/back-icon.svg" alt="Kembali Ke Beranda" aria-label="Kembali Ke Beranda"/>
+        <img src="https://raw.githubusercontent.com/Ardanu001/ByeTrash/def1b0edf0b766da6bbbb614a21249bd704c1d16/src/public/logo/back-icon.svg" alt="Kembali Ke Beranda" aria-label="Kembali Ke Beranda"/>
         <a href="#/homepage">Kembali</a>
     </div>
-    <img class="signPage__bar-logo" src="../public/logo/logo_byetrash.svg" alt="ByeTrash Logo" aria-label="ByeTrash Logo"/>
+    <img class="signPage__bar-logo" src="https://raw.githubusercontent.com/Ardanu001/ByeTrash/def1b0edf0b766da6bbbb614a21249bd704c1d16/src/public/logo/logo_byetrash.svg" alt="ByeTrash Logo" aria-label="ByeTrash Logo"/>
 </div>
 <div class="signPage__title">
     <h1>Sign Up</h1>

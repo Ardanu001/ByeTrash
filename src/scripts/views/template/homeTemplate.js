@@ -5,7 +5,7 @@ const homeTemplate = () => `
     <div class="row">
       <div class="col-md-6 order-md-1">
         <img
-          src="/src/public/hero/hero-1.jpg"
+          src="https://github.com/Ardanu001/ByeTrash/blob/main/src/public/hero/hero-1.jpg?raw=true"
           alt="pilah sampah"
           class="img-fluid"
         />
@@ -93,7 +93,7 @@ const homeTemplate = () => `
         <h2>Panduan BYETRASH</h2>
       </div>
     </div>
-    <img src="../public/pict/thumb1.png" class="img-fluid lazyload" alt="" />
+    <img src="https://github.com/Ardanu001/ByeTrash/blob/main/src/public/pict/thumb1.png?raw=true" class="img-fluid lazyload" alt="Paduan" />
   </div>
 </section>
 

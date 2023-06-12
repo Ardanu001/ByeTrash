@@ -3,10 +3,10 @@ const loginTemplate = () =>
         <div class="loginPage">
             <div class="loginPage__bar">
                 <div class="loginPage__bar-back">
-                    <img alt="back-icon" aria-label="Kembali Ke Beranda" src="../public/logo/back-icon.svg" />
+                    <img alt="back-icon" aria-label="Kembali Ke Beranda" src="https://raw.githubusercontent.com/Ardanu001/ByeTrash/def1b0edf0b766da6bbbb614a21249bd704c1d16/src/public/logo/back-icon.svg" />
                     <a href="#/homepage">Kembali</a>
                 </div>
-                <img class="loginPage__bar-logo" alt="Logo Website ByeTrash" src="../public/logo/logo_byetrash.svg"/>
+                <img class="loginPage__bar-logo" alt="Logo Website ByeTrash" src="https://raw.githubusercontent.com/Ardanu001/ByeTrash/def1b0edf0b766da6bbbb614a21249bd704c1d16/src/public/logo/logo_byetrash.svg"/>
             </div>
                 <div class="loginPage__title">
                     <h1>Login</h1>
