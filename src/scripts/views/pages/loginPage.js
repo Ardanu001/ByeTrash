@@ -13,7 +13,6 @@ const loginForm = {
            const checkBox = document.getElementById('checkLogin');
            const input = document.getElementById('passLogin');
            const textMsg = document.getElementById('showPass');
-
            checkBox.onclick = () => {
                if (checkBox.checked){
                    input.setAttribute('type', 'text');
