@@ -11,7 +11,11 @@ const seviceTemplate = () => `
         polusi dan dampak negatifnya.
       </p>
     </div>
-    <img src="tukarkan-sampah.png" alt="Logo" />
+    <img
+        src="https://github.com/Ardanu001/ByeTrash/blob/main/src/public/pict/tukarkan-sampah.png?raw=true"
+        class="img-fluid"
+        alt="Tukar Sampah" 
+    />
   </div>
 
   <div class="cara-tukar">

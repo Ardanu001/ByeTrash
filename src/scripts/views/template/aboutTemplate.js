@@ -14,7 +14,10 @@ const aboutTemplate = () => `
             menukarkannya menjadi uang tunai.
           </p>
         </div>
-        <img src="logo-1-resize.png" alt="Logo" />
+        <img
+          src="https://github.com/Ardanu001/ByeTrash/blob/main/src/public/logo/logo-2.png?raw=true"
+          class="img-fluid"
+        />
     </div>
 
     <div class="about">
@@ -31,31 +34,47 @@ const aboutTemplate = () => `
 
       <div class="team-section">
         <div class="team-card">
-          <img src="profile-1.jpg" alt="Team Member 1" />
+          <img
+          src="https://github.com/Ardanu001/ByeTrash/blob/main/src/public/pict/profile.jpg?raw=true"
+          class="img-fluid"
+          alt="Team Member 1" 
+          />
           <h3>Dea Ayuninda</h3>
           <p>STMIK Amika Soppeng</p>
         </div>
 
         <div class="team-card">
-          <img src="profile-1.jpg" alt="Team Member 2" />
+          <img
+          src="https://github.com/Ardanu001/ByeTrash/blob/main/src/public/pict/profile.jpg?raw=true"
+          class="img-fluid"
+          alt="Team Member 2" 
+          />
           <h3>Ardanu</h3>
           <p>Univ. Handayani Makassar</p>
         </div>
 
         <div class="team-card">
-          <img src="profile-1.jpg" alt="Team Member 3" />
+          <img
+          src="https://github.com/Ardanu001/ByeTrash/blob/main/src/public/pict/profile.jpg?raw=true"
+          class="img-fluid"
+          alt="Team Member 3" 
+          />
           <h3>Mochamad Alif Prayogo</h3>
           <p>Univ. Amikom Purwokerto</p>
         </div>
 
         <div class="team-card">
-          <img src="profile-1.jpg" alt="Team Member 4" />
+          <img
+          src="https://github.com/Ardanu001/ByeTrash/blob/main/src/public/pict/profile.jpg?raw=true"
+          class="img-fluid"
+          alt="Team Member 4" 
+          />
           <h3>Ahmad Fadhil Kurniahadi Al Jufri</h3>
           <p>STMIK IM Bandung</p>
         </div>
       </div>
     </div>
   </div>
-  `;   
+  `;
 
-  export default aboutTemplate;
+export default aboutTemplate;
