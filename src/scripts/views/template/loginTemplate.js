@@ -15,16 +15,16 @@ const loginTemplate = () =>
                 <form>
                     <div class="loginPage__form">
                         <label class="loginPage__form-label">E-mail</label>
-                        <input type="email" class="loginPage__form-input" autocomplete="off"/>
+                        <input type="email" id="emailInputLogin" class="loginPage__form-input" autocomplete="off"/>
                     </div>
                     <div class="loginPage__form">
                         <label class="loginPage__form-label">Password</label>
-                        <input type="password" class="loginPage__form-input" autocomplete="off"/>
+                        <input type="password" class="loginPage__form-input" autocomplete="off" id="passLogin"/>
                     </div>
                     <div class="loginPage__check">
                         <div class="loginPage__check-check">
-                            <input type="checkbox" class="checkBox" />
-                            <p>Show Password</p>
+                            <input type="checkbox" class="checkBox" id="checkLogin" />
+                            <p id="showPass">Show Password</p>
                         </div>
                         <a id="forgotPassword">Lupa Password?</a>
                     </div>
