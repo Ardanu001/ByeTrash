@@ -32,8 +32,8 @@ const aboutTemplate = () => `
       <div class="team-section">
         <div class="team-card">
           <img src="profile-1.jpg" alt="Team Member 1" />
-          <h3>Dea</h3>
-          <p>STMIK AMIKA Soppeng</p>
+          <h3>Dea Ayuninda</h3>
+          <p>STMIK Amika Soppeng</p>
         </div>
 
         <div class="team-card">
@@ -44,13 +44,13 @@ const aboutTemplate = () => `
 
         <div class="team-card">
           <img src="profile-1.jpg" alt="Team Member 3" />
-          <h3>Alif</h3>
+          <h3>Mochamad Alif Prayogo</h3>
           <p>Univ. Amikom Purwokerto</p>
         </div>
 
         <div class="team-card">
           <img src="profile-1.jpg" alt="Team Member 4" />
-          <h3>Fadhil</h3>
+          <h3>Ahmad Fadhil Kurniahadi Al Jufri</h3>
           <p>STMIK IM Bandung</p>
         </div>
       </div>
