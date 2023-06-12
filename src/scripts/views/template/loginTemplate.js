@@ -29,7 +29,7 @@ const loginTemplate = () =>
                         <a id="forgotPassword">Lupa Password?</a>
                     </div>
                     <div class="loginPage__button">
-                        <button id="btn-login">Login</button>
+                        <button id="btn-login" type="submit">Login</button>
                     </div>
                 </form>
                 <div class="loginPage__signPart">

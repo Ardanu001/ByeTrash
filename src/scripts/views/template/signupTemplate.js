@@ -25,7 +25,7 @@ const signupTemplate = () => `
             </div>
             <div class="signPage__form-input">
                 <label>Password</label>
-                <input type="password" autocomplete="off" id="passSign"/>
+                <input type="password" autocomplete="off" id="passSign" class="pass1"/>
             </div>
         </div>
         <div class="signPage__form2">
@@ -39,7 +39,7 @@ const signupTemplate = () => `
             </div>
             <div class="signPage__form-input">
                 <label>Masukkan Kembali Password</label>
-                <input type="password" autocomplete="off" id="passSign"/>
+                <input type="password" autocomplete="off" id="passSign" class="pass2"/>
             </div>
         </div>
     </div>
@@ -48,7 +48,7 @@ const signupTemplate = () => `
                 <p id="showPass">Show Password</p>
             </div>
             <div class="signPage__button">
-                <button id="btn-signUp">Register</button>
+                <button id="btn-signUp" type="submit">Register</button>
             </div>
             <div class="signPage__loginPart">
                 <p>Sudah Punya Akun? <a id="signUp" href="#/loginpage">Masuk Disini</a></p>
