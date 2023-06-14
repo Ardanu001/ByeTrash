@@ -43,10 +43,13 @@ function adduser(){
 
 document.addEventListener('DOMContentLoaded', function(){
     const submitUserForm = document.getElementById('register');
+    const button = document.getElementById('btn-login');
     submitUserForm.addEventListener('submit', function(e) {
         e.preventDefault();
         adduser();
         submitUserForm.setAttribute('href','#/homepage');
+        button.textContent = 'My Account';
+        button.setAttribute('href', '#/myprofileaccount');
     });
 });
 
