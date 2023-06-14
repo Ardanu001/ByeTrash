@@ -12,10 +12,10 @@ const loginTemplate = () =>
                     <h1>Login</h1>
                     <p>Masukkan E-mail dan password anda</p>
                 </div>
-                <form>
+                <form id="login">
                     <div class="loginPage__form">
                         <label class="loginPage__form-label">E-mail</label>
-                        <input type="email" id="emailInputLogin" class="loginPage__form-input" autocomplete="off"/>
+                        <input type="email" id="emailInputLogin" id="emailLogin" class="loginPage__form-input" autocomplete="off"/>
                     </div>
                     <div class="loginPage__form">
                         <label class="loginPage__form-label">Password</label>

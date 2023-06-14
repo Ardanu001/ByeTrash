@@ -12,30 +12,30 @@ const signupTemplate = () => `
     <h1>Sign Up</h1>
     <p>Daftarkan Akun Anda Disini</p>
 </div>
-<form>
+<form id="register">
 <div class="signPage__form">
         <div class="signPage__form1">
             <div class="signPage__form-input">
                 <label>Nama Anda</label>
-                <input type="text" autocomplete="off"/>
+                <input type="text" id="nama" autocomplete="off"/>
             </div>
             <div class="signPage__form-input">
                 <label>Alamat</label>
-                <input type="text" autocomplete="off"/>
+                <input type="text" id="alamat" autocomplete="off"/>
             </div>
             <div class="signPage__form-input">
                 <label>Email</label>
-                <input type="email" autocomplete="off" class="pass1"/>
+                <input type="email" id="email" autocomplete="off" class="pass1"/>
             </div>
         </div>
         <div class="signPage__form2">
             <div class="signPage__form-input">
                 <label>Nama Bank</label>
-                <input type="text" autocomplete="off"/>
+                <input type="text" id="namaBank" autocomplete="off"/>
             </div>
             <div class="signPage__form-input">
                 <label>Nomor Rekening</label>
-                <input type="text" autocomplete="off"/>
+                <input type="text" id="nomorRekening" autocomplete="off"/>
             </div>
             <div class="signPage__form-input">
                 <label>Password</label>
