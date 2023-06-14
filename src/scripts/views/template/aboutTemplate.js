@@ -3,7 +3,7 @@ const aboutTemplate = () => `
     <div class="section">
       <div class="about-section">
         <div class="">
-          <h2>TENTANG BYTRASH</h2>
+          <h2 class="fw-bold">TENTANG BYETRASH</h2>
           <p>
             Byetrash adalah website yang memfasilitasi masyarakat untuk
             mengelola sampah supaya bisa mengurangi polusi. Di website ini
@@ -20,14 +20,14 @@ const aboutTemplate = () => `
         />
     </div>
 
-    <div class="about">
+    <div class="about mt-4">
       <h2
         style="
           text-align: center;
           border-bottom: 2px solid green;
           width: 180px;
           margin: 0 auto;
-        "
+        " class="fw-bold"
       >
         Our Team
       </h2>

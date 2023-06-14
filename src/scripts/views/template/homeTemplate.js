@@ -24,7 +24,7 @@ const homeTemplate = () => `
 <section id="jenis-sampah" class="steps container-custom">
 <div class="row ms-2 me-2">
         <div class="col-12 col-sm-6 d-md-flex justify-content-md-center">
-            <img src="./img/pict/organic.jpg" alt="organic" class="img-fluid pb-4 steps__section-thumbnail" width="553" height="746" loading="lazy">
+            <img src="https://github.com/Ardanu001/ByeTrash/blob/main/src/public/pict/organic.jpg" alt="organic" class="img-fluid pb-4 steps__section-thumbnail" width="553" height="746" loading="lazy">
         </div>
         <div class="col-12 col-sm-6 align-self-center justify-content-md-center">
             <div class="steps__content-width">
@@ -42,7 +42,7 @@ const homeTemplate = () => `
 <div class="container-custom">
     <div class="row ms-2 me-2">
         <div class="col-12 col-sm-6 d-md-flex justify-content-md-center order-sm-1">
-            <img src="./img/pict/non-organic.jpg" alt="Sampah Anorganik" class="img-fluid pb-4 steps__section-thumbnail" width="553" height="746" loading="lazy">
+            <img src="https://github.com/Ardanu001/ByeTrash/blob/main/src/public/pict/non-organic.jpg" alt="Sampah Anorganik" class="img-fluid pb-4 steps__section-thumbnail" width="553" height="746" loading="lazy">
         </div>
         <div class="col-12 col-sm-6 align-self-center justify-content-md-center">
             <div class="steps__content-width">

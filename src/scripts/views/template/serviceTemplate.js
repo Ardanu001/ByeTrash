@@ -19,7 +19,7 @@ const seviceTemplate = () => `
   </div>
 
   <div class="cara-tukar">
-    <h2>Panduan Tukar Sampah</h2>
+    <h2 class="fw-bold">Panduan Tukar Sampah</h2>
     <div class="langkah-langkah">
       <div class="langkah">
         <h3>1. Buat Akun</h3>
