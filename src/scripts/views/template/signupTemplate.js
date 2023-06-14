@@ -24,21 +24,21 @@ const signupTemplate = () => `
                 <input type="text" autocomplete="off"/>
             </div>
             <div class="signPage__form-input">
-                <label>Password</label>
-                <input type="password" autocomplete="off" id="passSign" class="pass1"/>
+                <label>Email</label>
+                <input type="email" autocomplete="off" class="pass1"/>
             </div>
         </div>
         <div class="signPage__form2">
             <div class="signPage__form-input">
-                <label>E-mail</label>
-                <input type="email" autocomplete="off"/>
+                <label>Nama Bank</label>
+                <input type="text" autocomplete="off"/>
             </div>
             <div class="signPage__form-input">
                 <label>Nomor Rekening</label>
                 <input type="text" autocomplete="off"/>
             </div>
             <div class="signPage__form-input">
-                <label>Masukkan Kembali Password</label>
+                <label>Password</label>
                 <input type="password" autocomplete="off" id="passSign" class="pass2"/>
             </div>
         </div>
