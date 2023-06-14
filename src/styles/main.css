@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
 body {
+  font-family: "Poppins", sans-serif !important;
   padding-top: 100px;
 }
 .map-container {
@@ -14,6 +17,52 @@ body {
   width: 100%;
   position: absolute;
 }
+
+/* Steps Section */
+
+.steps {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.steps__section-tumbnail {
+    height: 240px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.steps__content-width {
+   max-width: 456px;
+   margin: 0 auto;  
+}
+
+.steps--background {
+    background-color: #eceeef;
+}
+
+@media (min-width: 544px) {
+    .steps {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .steps__section-tumbnail {
+        height: auto;
+    }
+}
+
+
+.img-blogs {
+    height: 225px;
+    object-fit: cover;
+  }
+
+
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
 
 /* About */
 
