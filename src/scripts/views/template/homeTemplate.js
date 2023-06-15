@@ -14,7 +14,7 @@ const homeTemplate = () => `
         </div>
        
       </div>
-       <a href="#" target="_blank" class="mt-2 btn btn-md btn-outline-light" style="background-color: #8d9e6f;" role="button">Excange Now</a>
+       <a href="#/servicepage" target="_blank" class="mt-2 btn btn-md btn-outline-light" style="background-color: #8d9e6f;" role="button">Excange Now</a>
     </div>
   </section>
 <!-- Hero End -->

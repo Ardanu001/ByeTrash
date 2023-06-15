@@ -22,10 +22,9 @@ const seviceTemplate = () => `
     <h2 class="fw-bold">Panduan Tukar Sampah</h2>
     <div class="langkah-langkah">
       <div class="langkah">
-        <h3>1. Buat Akun</h3>
+        <h3>1. Kumpulkan Sampah</h3>
         <p>
-          Silahkana login di ByeTrash, jika belum punya akun silahkan Daftar
-          terlebih dahulu.
+          Silahkan kumpulkan sampah yang mengotori lingkungan kalian
         </p>
       </div>
       <div class="langkah">
@@ -67,7 +66,7 @@ const seviceTemplate = () => `
   </div>
 
   <div class="tombol-tukar">
-    <button onclick="#/servicepage/formTukarSampah">Tukarkan Sampah</button>
+    <a id="btn-service" href="#/formTukarSampah">Tukarkan Sampah</a>
   </div>
 </div>
 `;

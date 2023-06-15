@@ -7,7 +7,7 @@ const routes = {
     '/homepage': homeWebsite,
     '/aboutpage': aboutWebsite,
     '/servicepage': serviceWebsite,
-    '/servicepage/formTukarSampah': TukarSampah
+    '/formTukarSampah': TukarSampah,
 };
 
 export default routes;
