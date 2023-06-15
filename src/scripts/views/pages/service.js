@@ -1,8 +1,11 @@
-import seviceTemplate from "../template/serviceTemplate";
+/* eslint-disable radix */
+/* eslint-disable eqeqeq */
+/* eslint-disable no-shadow */
+import seviceTemplate from '../template/serviceTemplate';
 
 const serviceWebsite = {
-  async render(){
-         return `
+  async render() {
+    return `
              <section id="sevicepage"></section>
              <div class="tukarPage">
         <form method="post" id="FormTukarSampah">
@@ -89,103 +92,103 @@ const serviceWebsite = {
     </div>
     </div>
          `;
-     },
- 
-     async afterRender(){
-         const homeContainer = document.querySelector('#sevicepage');
-         homeContainer.innerHTML = seviceTemplate(); 
-         const button = document.getElementById('btn-tukar');
-         const formBiodataContainer = document.querySelector('.tukarPage__form_1');
+  },
 
-            button.addEventListener('click', function(event){
+  async afterRender() {
+    const homeContainer = document.querySelector('#sevicepage');
+    homeContainer.innerHTML = seviceTemplate();
+    const button = document.getElementById('btn-tukar');
+    const formBiodataContainer = document.querySelector('.tukarPage__form_1');
+
+    button.addEventListener('click', (event) => {
+      event.preventDefault();
+      formBiodataContainer.removeAttribute('id');
+
+      const samapahFormContainer = document.querySelector('.tukarPage__form_2');
+      const label = document.getElementById('labelData');
+      const check = document.getElementById('checkbox');
+      const button = document.getElementById('next');
+
+      check.onclick = () => {
+        if (check.checked) {
+          label.textContent = 'Data Anda Sudah Terkonfirmasi';
+          button.removeAttribute('disabled');
+          button.addEventListener('click', (event) => {
             event.preventDefault();
-            formBiodataContainer.removeAttribute("id");
-            
-            const samapahFormContainer = document.querySelector('.tukarPage__form_2');
-            const label = document.getElementById('labelData');
-            const check = document.getElementById('checkbox');
-            const button = document.getElementById('next');
-            
-            check.onclick = () => {
-                if (check.checked){
-                    label.textContent = "Data Anda Sudah Terkonfirmasi";
-                    button.removeAttribute('disabled');
-                    button.addEventListener('click', function(event){
-                        event.preventDefault();
-                        formBiodataContainer.setAttribute('id', 'hiddenForm');
-                        samapahFormContainer.removeAttribute('id');
-                    });
-                } else {
-                    button.setAttribute('disabled');
-                }
-            }
+            formBiodataContainer.setAttribute('id', 'hiddenForm');
+            samapahFormContainer.removeAttribute('id');
+          });
+        } else {
+          button.setAttribute('disabled');
+        }
+      };
 
-            const jenis = document.getElementById('jenissampah');
-            jenis.addEventListener('click', function(event){
-                event.preventDefault();
-                if (jenis.value == "Plastik") {
-                    document.querySelector('#harga').value = 2000;
-                }
-                
-                if (jenis.value == "Kaca") {
-                    document.querySelector('#harga').value = 5000;
-                }
-                
-                if (jenis.value == "Kertas") {
-                    document.querySelector('#harga').value = 1000;
-                }
+      const jenis = document.getElementById('jenissampah');
+      jenis.addEventListener('click', (event) => {
+        event.preventDefault();
+        if (jenis.value == 'Plastik') {
+          document.querySelector('#harga').value = 2000;
+        }
 
-                if (jenis.value == "Kaleng") {
-                    document.querySelector('#harga').value = 6000;
-                }
+        if (jenis.value == 'Kaca') {
+          document.querySelector('#harga').value = 5000;
+        }
 
-                if (jenis.value == "Elektronik") {
-                    document.querySelector('#harga').value = 15000;
-                }
+        if (jenis.value == 'Kertas') {
+          document.querySelector('#harga').value = 1000;
+        }
 
-                if (jenis.value == "Organik (Kompos)") {
-                    document.querySelector('#harga').value = 0;
-                }
+        if (jenis.value == 'Kaleng') {
+          document.querySelector('#harga').value = 6000;
+        }
 
-                const jumlah = document.querySelector('#jumlah');
-                jumlah.addEventListener('click', function(e){
-                    e.preventDefault();
-                    const harga = parseInt(document.querySelector("#harga").value);
-                    const total = document.querySelector('#total');
-                    const op = harga * jumlah.value;
-                    total.value = op;
-                });
+        if (jenis.value == 'Elektronik') {
+          document.querySelector('#harga').value = 15000;
+        }
 
-                const sampahFormContainer = document.querySelector('.tukarPage__form_2');
-                const successContainer = document.querySelector('.confirm');
-                const buttonConfirm = document.getElementById('completed');
-                buttonConfirm.addEventListener("click",function(e){
-                    e.preventDefault();
-                    sampahFormContainer.setAttribute('id','hiddenForm');
-                    successContainer.removeAttribute('id');
+        if (jenis.value == 'Organik (Kompos)') {
+          document.querySelector('#harga').value = 0;
+        }
 
-                    const user = document.getElementById('nama').value;
-                    const trash = document.getElementById('jenissampah').value;
-                    const prize = document.getElementById('total').value;
-                    const userContainer = document.getElementById('user');
-                    const trashContainer = document.getElementById('trashCat');
-                    const prizeContainer = document.getElementById('prize');
+        const jumlah = document.querySelector('#jumlah');
+        jumlah.addEventListener('click', (e) => {
+          e.preventDefault();
+          const harga = parseInt(document.querySelector('#harga').value);
+          const total = document.querySelector('#total');
+          const op = harga * jumlah.value;
+          total.value = op;
+        });
 
-                    userContainer.textContent = 'Selamat ' + user;
-                    trashContainer.textContent = 'Sampah ' + trash + ' Anda Berhasil Terjual';
-                    prizeContainer.textContent = 'Dengan Harga Rp.' + prize;
+        const sampahFormContainer = document.querySelector('.tukarPage__form_2');
+        const successContainer = document.querySelector('.confirm');
+        const buttonConfirm = document.getElementById('completed');
+        buttonConfirm.addEventListener('click', (e) => {
+          e.preventDefault();
+          sampahFormContainer.setAttribute('id', 'hiddenForm');
+          successContainer.removeAttribute('id');
 
-                    const form = document.getElementById('FormTukarSampah');
-                    const buttonOK = document.getElementById('btnOk');
-                    buttonOK.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        successContainer.setAttribute('id', 'hiddenForm');
-                        form.reset();
-                    })
-                });
-            });
-     });
-     },
- };
- 
- export default serviceWebsite;
+          const user = document.getElementById('nama').value;
+          const trash = document.getElementById('jenissampah').value;
+          const prize = document.getElementById('total').value;
+          const userContainer = document.getElementById('user');
+          const trashContainer = document.getElementById('trashCat');
+          const prizeContainer = document.getElementById('prize');
+
+          userContainer.textContent = `Selamat ${user}`;
+          trashContainer.textContent = `Sampah ${trash} Anda Berhasil Terjual`;
+          prizeContainer.textContent = `Dengan Harga Rp.${prize}`;
+
+          const form = document.getElementById('FormTukarSampah');
+          const buttonOK = document.getElementById('btnOk');
+          buttonOK.addEventListener('click', (e) => {
+            e.preventDefault();
+            successContainer.setAttribute('id', 'hiddenForm');
+            form.reset();
+          });
+        });
+      });
+    });
+  },
+};
+
+export default serviceWebsite;

@@ -1,16 +1,16 @@
-import aboutTemplate from "../template/aboutTemplate";
+import aboutTemplate from '../template/aboutTemplate';
 
 const aboutWebsite = {
-  async render(){
-         return `
+  async render() {
+    return `
              <section id="aboutpage"></section>
          `;
-     },
- 
-     async afterRender(){
-         const homeContainer = document.querySelector('#aboutpage');
-         homeContainer.innerHTML = aboutTemplate(); 
-     },
- };
- 
- export default aboutWebsite;
+  },
+
+  async afterRender() {
+    const homeContainer = document.querySelector('#aboutpage');
+    homeContainer.innerHTML = aboutTemplate();
+  },
+};
+
+export default aboutWebsite;
