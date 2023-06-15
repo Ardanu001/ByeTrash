@@ -215,7 +215,129 @@ body {
   color: #4caf50;
 }
 
-@media (max-width: 600px) {
+/* section form tukar*/
+
+.tukarPage {
+  padding-left: 300px;
+  padding-right: 300px;
+  margin-bottom: 0;
+  margin: 0 auto;
+}
+
+#hiddenForm {
+  display: none;
+}
+
+.tukarPage__form_1{
+  padding: 20px;
+}
+
+.tukarPage__title {
+  text-align: center;
+  padding: 10px;
+}
+
+.tukarPage__title h1 {
+  font-size: 28px;
+}
+
+.tukarPage__title p {
+  font-size: 18px;
+}
+
+.tukarPage__form-input{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.tukarPage__form-input label {
+  font-size: 14px;
+}
+
+.tukarPage__form-input input {
+  padding: 6px;
+  border: solid 2px rgb(2, 59, 2);
+  cursor: pointer;
+  background-color: rgb(209, 204, 204);
+}
+
+.tukarPage__form-input input:focus{
+  background-color: #fff;
+}
+
+.tukarPage__check {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.tukarPage__check #checkbox {
+  width: 15px;
+  height: inherit;    
+}
+
+.tukarPage__check p {
+  font-size: 18px;
+  padding-left: 4px;
+}
+
+#next, #completed {
+  width: 100%;
+  background-color: rgb(2, 59, 2);
+  color: white;
+  border: 2px solid rgb(2, 59, 2);
+  font-size: 18px;
+  padding: 6px;
+  border-radius: 10px;
+  margin-top: 6px;
+}
+
+.tukarPage__form_2 {
+  padding: 20px;
+}
+
+#next:focus {
+  color: rgb(2, 59, 2);
+  background-color: #fff;
+}
+
+#jenissampah {
+  border: solid 2px rgb(2, 59, 2);
+  background-color: rgb(209, 204, 204);
+  padding: 6px;
+}
+
+#jenissampah:focus {
+  background-color: #fff;
+}
+
+@media (max-width: 1000px) {
+  .tukarPage {
+      padding-left: 200px;
+      padding-right: 200px;
+  }
+
+  .tukarPage__check p {
+      font-size: 14px;
+      padding-left: 4px;
+  }
+  
+}
+
+@media (max-width: 700px) {
+  .tukarPage {
+      padding-left: 50px;
+      padding-right: 50px;
+  }
+
+  .tukarPage__check p {
+      font-size: 12px;
+      padding-left: 4px;
+  }
+
   .service-container {
     max-width: 800px;
     margin: 0 auto;
@@ -230,4 +352,5 @@ body {
   .team-card {
     width: 200px;
   }
+  
 }

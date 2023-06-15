@@ -1,14 +1,11 @@
-import '../styles/login.css';
 import '../styles/main.css';
-import '../styles/signup.css';
 import 'regenerator-runtime';
 import app from './views/app';
 import '../controller/register';
 
 const App = new app({
-    content: document.querySelector('main'),
+    content: document.querySelector('.main'),
     button: document.querySelector('.navbar-toggler'),
-    form: document.querySelector('#form'),
 });
 
 window.addEventListener('hashchange', () => {

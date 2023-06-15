@@ -67,7 +67,7 @@ const seviceTemplate = () => `
   </div>
 
   <div class="tombol-tukar">
-    <button>Tukarkan Sampah</button>
+    <button onclick="#/servicepage/formTukarSampah">Tukarkan Sampah</button>
   </div>
 </div>
 `;

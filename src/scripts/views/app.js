@@ -3,10 +3,9 @@ import routes from "../routes/routes";
 import DrawerInitiator from "../utils/drawerinitiator";
 
 class app {
-    constructor({content, button, form}){
+    constructor({content, button}){
         this._content = content;
         this._button = button;
-        this._form = form;
 
         this._initialAppShell();
     }
@@ -24,13 +23,6 @@ class app {
         const page = routes[url];
         this._content.innerHTML = await page.render();
         await page.afterRender();
-    }
-
-    async renderform(){
-        const url = UrlParser.parseActiveUrlWithCombiner();
-        const page = routes[url];
-        this._form.innerHTML = await page.render();
-        await page.afterRender();   
     }
 }
 
