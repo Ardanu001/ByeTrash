@@ -5,7 +5,7 @@ const serviceWebsite = {
          return `
              <section id="sevicepage"></section>
              <div class="tukarPage">
-        <form method="post">
+        <form method="post" id="FormTukarSampah">
         <div class="tukarPage__form_1" id="hiddenForm">
             <div class="tukarPage__title">
                 <h1>Tukar Sampah</h1>
@@ -166,7 +166,7 @@ const serviceWebsite = {
 
                     const user = document.getElementById('nama').value;
                     const trash = document.getElementById('jenissampah').value;
-                    const prize = document.getElementById('total');
+                    const prize = document.getElementById('total').value;
                     const userContainer = document.getElementById('user');
                     const trashContainer = document.getElementById('trashCat');
                     const prizeContainer = document.getElementById('prize');
@@ -175,11 +175,12 @@ const serviceWebsite = {
                     trashContainer.textContent = 'Sampah ' + trash + ' Anda Berhasil Terjual';
                     prizeContainer.textContent = 'Dengan Harga Rp.' + prize;
 
-
+                    const form = document.getElementById('FormTukarSampah');
                     const buttonOK = document.getElementById('btnOk');
                     buttonOK.addEventListener('click', function(e) {
                         e.preventDefault();
                         successContainer.setAttribute('id', 'hiddenForm');
+                        form.reset();
                     })
                 });
             });

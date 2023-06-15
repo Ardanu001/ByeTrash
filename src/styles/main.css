@@ -211,7 +211,7 @@ body {
   text-decoration: none;
 }
 
-.btn-tukar:focus {
+#btn-tukar:hover {
   background-color: #fff;
   color: #4caf50;
 }
@@ -340,12 +340,12 @@ body {
 .img-check img {
   padding-top: 20px;
   width: 240px;
-  -webkit-animation: berputar 0.2s linear;
+  -webkit-animation: berputar 0.7s linear;
 }
 
 .caption {
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 @-webkit-keyframes berputar {
@@ -365,9 +365,22 @@ body {
       padding-right: 200px;
   }
 
+  .caption {
+    text-align: center;
+    font-size: 14px;
+  }
+
   .tukarPage__check p {
       font-size: 18px;
       padding-left: 4px;
+  }
+
+  .confirm {
+    padding-left: 200px;
+    padding-right: 200px;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 20px;
   }
   
 }
@@ -376,6 +389,19 @@ body {
   .tukarPage {
       padding-left: 50px;
       padding-right: 50px;
+  }
+
+  .caption {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .confirm {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 20px;
   }
 
   .tukarPage__check p {
