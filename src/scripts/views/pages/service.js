@@ -40,7 +40,7 @@ const serviceWebsite = {
                         <p id="labelData">Data Anda Sudah Benar ?</p>
                     </div>
                     <div class="tukarPage__button">
-                        <button id="next">Berikutnya</button>
+                        <button id="next" disabled>Berikutnya</button>
                     </div>
             </div>
             <div class="tukarPage__form_2" id="hiddenForm">
@@ -69,7 +69,7 @@ const serviceWebsite = {
                         <input type="text" autocomplete="off" id="total" disabled/>
                     </div>
                     <div class="tukarPage__button">
-                        <button id="completed" type="submit">Selanjutnya</button>
+                        <button id="completed" type="submit">Konfirmasi</button>
                     </div>
             </div>
         </form>
@@ -88,8 +88,43 @@ const serviceWebsite = {
             button.addEventListener('click', function(event){
             event.preventDefault();
             formBiodataContainer.removeAttribute("id");
-        
-    });
+            
+            const samapahFormContainer = document.querySelector('.tukarPage__form_2');
+            const label = document.getElementById('labelData');
+            const check = document.getElementById('checkbox');
+            const button = document.getElementById('next');
+            
+            check.onclick = () => {
+                if (check.checked){
+                    label.textContent = "Data Anda Sudah Benar";
+                    button.removeAttribute('disabled');
+                    button.addEventListener('click', function(event){
+                        event.preventDefault();
+                        formBiodataContainer.setAttribute('id', 'hiddenForm');
+                        samapahFormContainer.removeAttribute('id');
+                    });
+                } else {
+                    button.setAttribute('disabled');
+                }
+            }
+
+            const jenis = document.querySelector('#jenissampah').value;
+            const harga = document.querySelector('#harga').value;
+            const total = document.querySelector('#total');
+            const jumlah = document.querySelector('#jumlah');
+
+            if (jenis === "Plastik") {
+                document.querySelector('#harga').value = 5000;
+            }
+            
+            if (jenis === "Kaca") {
+                document.querySelector('#harga').value = 7000;
+            }
+            
+            if (jenis === "Kertas") {
+                document.querySelector('#harga').value = 4000;
+            }
+     });
      },
  };
  
