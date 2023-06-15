@@ -54,6 +54,9 @@ const serviceWebsite = {
                             <option value="Plastik">Plastik</option>
                             <option value="Kaca">Kaca</option>
                             <option value="Kertas">Kertas</option>
+                            <option value="Kaleng">Kaleng</option>
+                            <option value="Elektronik">Elektronik</option>
+                            <option value="Organik">Organik</option>
                         </select>
                     </div>
                     <div class="tukarPage__form-input">
@@ -112,15 +115,27 @@ const serviceWebsite = {
             jenis.addEventListener('click', function(event){
                 event.preventDefault();
                 if (jenis.value == "Plastik") {
-                    document.querySelector('#harga').value = 5000;
+                    document.querySelector('#harga').value = 2000;
                 }
                 
                 if (jenis.value == "Kaca") {
-                    document.querySelector('#harga').value = 7000;
+                    document.querySelector('#harga').value = 5000;
                 }
                 
                 if (jenis.value == "Kertas") {
-                    document.querySelector('#harga').value = 4000;
+                    document.querySelector('#harga').value = 1000;
+                }
+
+                if (jenis.value == "Kaleng") {
+                    document.querySelector('#harga').value = 6000;
+                }
+
+                if (jenis.value == "Elektronik") {
+                    document.querySelector('#harga').value = 15000;
+                }
+
+                if (jenis.value == "Organik") {
+                    document.querySelector('#harga').value = 0;
                 }
 
                 const jumlah = document.querySelector('#jumlah');
