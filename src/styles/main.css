@@ -10,6 +10,25 @@ body {
   position: relative;
   height: 0;
 }
+
+#team-member{
+  text-decoration: none;
+  font-weight: lighter;
+  color: #000;
+  padding-left: 6px;
+}
+
+#team-member:hover {
+  background-color: #4caf50;
+}
+
+#navChoice{
+  text-decoration: none;
+}
+
+#navChoice:hover{
+  border-bottom: solid 2px #4caf50 ;
+}
 .map-container iframe {
   left: 0;
   top: 0;
