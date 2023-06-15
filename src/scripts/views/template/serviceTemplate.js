@@ -1,22 +1,22 @@
 const seviceTemplate = () => `
 <div class="service-container">
-  <div class="service">
-    <div class="service-description">
-      <h2>TUKARKAN SAMPAH DI BYETRASH</h2>
-      <p>
-        Dengan menukarkan sampah , kamu ikut serta dalam upaya membangun
-        masa depan yang lebih bersih, berkelanjutan, dan lebih baik bagi
-        generasi mendatang. Dengan setiap sampah yang kamu tukarkan, kamu
-        memberikan kontribusi nyata dalam menjaga lingkungan hidup kita dari
-        polusi dan dampak negatifnya.
-      </p>
+  <div class="section">
+      <div class="about-section">
+        <div class="">
+          <h2 class="fw-bold">Tukarkan Sampah di Byetrash</h2>
+          <p>
+            Dengan menukarkan sampah , kamu ikut serta dalam upaya membangun
+            masa depan yang lebih bersih, berkelanjutan, dan lebih baik bagi
+            generasi mendatang. Dengan setiap sampah yang kamu tukarkan, kamu
+            memberikan kontribusi nyata dalam menjaga lingkungan hidup kita dari
+            polusi dan dampak negatifnya.
+          </p>
+        </div>
+        <img
+          src="https://github.com/Ardanu001/ByeTrash/blob/main/src/public/pict/tukarkan-sampah.png?raw=true"
+          class="img-fluid"
+        />
     </div>
-    <img
-        src="https://github.com/Ardanu001/ByeTrash/blob/main/src/public/pict/tukarkan-sampah.png?raw=true"
-        class="img-fluid"
-        alt="Tukar Sampah" 
-    />
-  </div>
 
   <div class="cara-tukar">
     <h2 class="fw-bold">Panduan Tukar Sampah</h2>
