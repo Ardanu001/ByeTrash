@@ -78,7 +78,7 @@ const serviceWebsite = {
         </form>
         <div class="confirm" id="hiddenForm">
         <div class="img-check">
-            <img class="logo-success" src="./img/icon/checklist-icon.png">
+            <img class="logo-success" src="https://github.com/Ardanu001/ByeTrash/blob/main/src/public/pict/checklist-icon.png?raw=true">
             <div class="caption">
                 <p id="user"></p>
                 <p id="trashCat"></p>
