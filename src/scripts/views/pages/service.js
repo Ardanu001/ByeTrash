@@ -56,7 +56,7 @@ const serviceWebsite = {
                             <option value="Kertas">Kertas</option>
                             <option value="Kaleng">Kaleng</option>
                             <option value="Elektronik">Elektronik</option>
-                            <option value="Organik">Organik</option>
+                            <option value="Organik (Kompos)">Organik (Kompos)</option>
                         </select>
                     </div>
                     <div class="tukarPage__form-input">
@@ -76,8 +76,17 @@ const serviceWebsite = {
                     </div>
             </div>
         </form>
-        <div class="confirm">
+        <div class="confirm" id="hiddenForm">
+        <div class="img-check">
+            <img class="logo-success" src="./img/icon/checklist-icon.png">
+            <div class="caption">
+                <p id="user"></p>
+                <p id="trashCat"></p>
+                <p id="prize"></p>
+            </div>
+            <button id="btnOk">Done</button>
         </div>
+    </div>
     </div>
          `;
      },
@@ -134,7 +143,7 @@ const serviceWebsite = {
                     document.querySelector('#harga').value = 15000;
                 }
 
-                if (jenis.value == "Organik") {
+                if (jenis.value == "Organik (Kompos)") {
                     document.querySelector('#harga').value = 0;
                 }
 
@@ -145,7 +154,34 @@ const serviceWebsite = {
                     const total = document.querySelector('#total');
                     const op = harga * jumlah.value;
                     total.value = op;
-                })
+                });
+
+                const sampahFormContainer = document.querySelector('.tukarPage__form_2');
+                const successContainer = document.querySelector('.confirm');
+                const buttonConfirm = document.getElementById('completed');
+                buttonConfirm.addEventListener("click",function(e){
+                    e.preventDefault();
+                    sampahFormContainer.setAttribute('id','hiddenForm');
+                    successContainer.removeAttribute('id');
+
+                    const user = document.getElementById('nama').value;
+                    const trash = document.getElementById('jenissampah').value;
+                    const prize = document.getElementById('total');
+                    const userContainer = document.getElementById('user');
+                    const trashContainer = document.getElementById('trashCat');
+                    const prizeContainer = document.getElementById('prize');
+
+                    userContainer.textContent = 'Selamat ' + user;
+                    trashContainer.textContent = 'Sampah ' + trash + ' Anda Berhasil Terjual';
+                    prizeContainer.textContent = 'Dengan Harga Rp.' + prize;
+
+
+                    const buttonOK = document.getElementById('btnOk');
+                    buttonOK.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        successContainer.setAttribute('id', 'hiddenForm');
+                    })
+                });
             });
      });
      },
