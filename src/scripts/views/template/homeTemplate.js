@@ -1,5 +1,4 @@
-const homeTemplate = () => `
-<!-- Hero -->
+const homeTemplate = () => `<!-- Hero -->
   <section id="hero" class="pt-5">
     <div class="container">
       <div class="row">
@@ -90,7 +89,6 @@ const homeTemplate = () => `
     </div>
   </div>
 </section>
-<!--Google Maps end-->
-    `;
+<!--Google Maps end-->`;
 
 export default homeTemplate;
