@@ -66,7 +66,7 @@ const seviceTemplate = () => `
   </div>
 
   <div class="tombol-tukar">
-    <a id="btn-service" href="#/formTukarSampah">Tukarkan Sampah</a>
+    <a id="btn-tukar">Tukarkan Sampah</a>
   </div>
 </div>
 `;
