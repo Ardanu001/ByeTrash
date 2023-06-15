@@ -271,19 +271,16 @@ body {
 .tukarPage__check {
   display: flex;
   flex-direction: row;
-  align-self: center;
-  align-content: center;
-  margin: 0 auto;
 }
 
 .tukarPage__check #checkbox {
-  width: 15px;
-  height: inherit;    
+  width: 20px;
+  width: 20px;   
 }
 
 .tukarPage__check p {
   font-size: 18px;
-  padding-left: 4px;
+  margin: 8px ;
 }
 
 #next, #completed {
@@ -328,7 +325,7 @@ body {
   }
 
   .tukarPage__check p {
-      font-size: 14px;
+      font-size: 18px;
       padding-left: 4px;
   }
   
@@ -341,7 +338,7 @@ body {
   }
 
   .tukarPage__check p {
-      font-size: 12px;
+      font-size: 16px;
       padding-left: 4px;
   }
 

@@ -13,7 +13,7 @@ const serviceWebsite = {
             </div>
                     <div class="tukarPage__form-input">
                         <label>Nama Anda</label>
-                        <input type="text" id="nama" required/>
+                        <input type="text" id="nama" autocomplete="off" required/>
                     </div>
                     <div class="tukarPage__form-input">
                         <label>Alamat</label>
@@ -96,7 +96,7 @@ const serviceWebsite = {
             
             check.onclick = () => {
                 if (check.checked){
-                    label.textContent = "Data Anda Sudah Benar";
+                    label.textContent = "Data Anda Sudah Terkonfirmasi";
                     button.removeAttribute('disabled');
                     button.addEventListener('click', function(event){
                         event.preventDefault();
@@ -108,22 +108,30 @@ const serviceWebsite = {
                 }
             }
 
-            const jenis = document.querySelector('#jenissampah').value;
-            const harga = document.querySelector('#harga').value;
-            const total = document.querySelector('#total');
-            const jumlah = document.querySelector('#jumlah');
+            const jenis = document.getElementById('jenissampah');
+            jenis.addEventListener('click', function(event){
+                event.preventDefault();
+                if (jenis.value == "Plastik") {
+                    document.querySelector('#harga').value = 5000;
+                }
+                
+                if (jenis.value == "Kaca") {
+                    document.querySelector('#harga').value = 7000;
+                }
+                
+                if (jenis.value == "Kertas") {
+                    document.querySelector('#harga').value = 4000;
+                }
 
-            if (jenis === "Plastik") {
-                document.querySelector('#harga').value = 5000;
-            }
-            
-            if (jenis === "Kaca") {
-                document.querySelector('#harga').value = 7000;
-            }
-            
-            if (jenis === "Kertas") {
-                document.querySelector('#harga').value = 4000;
-            }
+                const jumlah = document.querySelector('#jumlah');
+                jumlah.addEventListener('click', function(e){
+                    e.preventDefault();
+                    const harga = parseInt(document.querySelector("#harga").value);
+                    const total = document.querySelector('#total');
+                    const op = harga * jumlah.value;
+                    total.value = op;
+                })
+            });
      });
      },
  };
