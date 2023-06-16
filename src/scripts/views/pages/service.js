@@ -170,7 +170,7 @@ const serviceWebsite = {
         }
 
         if (jenis.value == 'Organik (Kompos)') {
-          document.querySelector('#harga').value = 0;
+          document.querySelector('#harga').value = 10000;
         }
 
         const jumlah = document.querySelector('#jumlah');
