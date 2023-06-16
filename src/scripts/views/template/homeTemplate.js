@@ -133,6 +133,54 @@ const homeTemplate = () => `<!-- Hero -->
               </div>
             </div>
           </div>
+
+          <div class="col d-flex">
+            <div class="card shadow-sm h-100 d-flex flex-column">
+              <img class="bd-placeholder-img card-img-top img-blogs img-fluid" src="./pict/thumb5.png" width="100%" height="225" alt="Placeholder: Thumbnail" />
+                  <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/>
+              <div class="card-body">
+                <p class="card-text fw-bold">Cara Mengurangi Sampah Plastik Rumahan dan Contoh Daur Ulangnya</p>
+                <p class="card-text">Plastik bisa Anda temukan di mana saja dengan mudah. Rasanya hampir seluruh aktivitas yang Anda lakukan selalu melibatkan plastik di dalamnya sebagai salah satu aspek penting.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a class="btn btn-outline-dark btn-sm" href="https://www.rumah.com/panduan-properti/15-cara-mengurangi-sampah-plastik-rumahan-dan-contoh-daur-ulangnya-27696" target="_blank" role="button">Read</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col d-flex">
+            <div class="card shadow-sm h-100 d-flex flex-column">
+              <img class="bd-placeholder-img card-img-top img-blogs img-fluid" src="./pict/thumb6.jpg" width="100%" height="225" alt="Placeholder: Thumbnail" />
+                  <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/>
+              <div class="card-body">
+                <p class="card-text fw-bold">Cara Sederhana dan Efektif Mengurangi Sampah di Rumah</p>
+                <p class="card-text">Mengurangi sampah di rumah dapat dilakukan dengan dua cara yaitu mendaur ulang dan menggunakan barang-barang ramah lingkungan. Adapun mendaur ulang sampah sendiri di rumah merupakan keterampilan yang sangat dibutuhkan.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a class="btn btn-outline-dark btn-sm" href="https://perkim.id/rumah/cara-sederhana-dan-efektif-mengurangi-sampah-di-rumah/" target="_blank" role="button">Read</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col d-flex">
+            <div class="card shadow-sm h-100 d-flex flex-column">
+              <img class="bd-placeholder-img card-img-top img-blogs img-fluid" src="./pict/thumb7.png" width="100%" height="225" alt="Placeholder: Thumbnail" />
+                  <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/>
+              <div class="card-body">
+                <p class="card-text fw-bold">Cara Membuat Pupuk Kompos dari Sampah Organik Rumah Tangga</p>
+                <p class="card-text">Kompos merupakan salah satu jenis pupuk organik yang sudah ada sejak lama. Pengertian kompos adalah bahan-bahan organik yang sudah mengalami proses pelapukan karena terjadi interaksi antara mikroorganisme atau bakteri pembusuk yang bekerja di dalam bahan organik tersebut.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a class="btn btn-outline-dark btn-sm" href="https://dlh.palangkaraya.go.id/membuat-kompos-dari-sampah-organik/#:~:text=Penggunaan%20kompos%20bermanfaat%20untuk%20menjaga,untuk%20memenuhi%20kebutuhan%20hara%20tanaman" target="_blank" role="button">Read</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
     </div>
 </div>
