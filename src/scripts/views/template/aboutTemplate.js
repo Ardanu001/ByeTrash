@@ -32,7 +32,7 @@ const aboutTemplate = () => `
         Our Team
       </h2>
 
-      <div class="team-section">
+      <div class="team-section" id="team">
         <div class="team-card">
           <img
           src="https://github.com/Ardanu001/ByeTrash/blob/main/src/public/pict/profile1.jpg?raw=true"
