@@ -1,0 +1,18 @@
+{
+    "id": "ByeTrash",
+    "start_url": "./index.html",
+    "name": "ByeTrash App",
+    "short_name": "BT App",
+    "description": "Ayo Tukar Sampahmu Jadi Uang",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#D84315",
+    "icons": [
+      {
+        "src": "../public/logo/logo_byetrash (1) (1).png",
+        "sizes": "72x76",
+        "type": "png",
+        "purpose": "any"
+      }
+    ]
+  }
