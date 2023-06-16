@@ -556,10 +556,22 @@ body {
 
   .img-check img {
     width: 180px;
+    -webkit-animation: berputar 0.6 linear ;
   }
 
   .img-check{
     width: 180px;
+  }
+
+  @-webkit-keyframes berputar {
+    0% {
+      -webkit-transform: rotate(-360deg);
+      width: 50px;
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+      width: 180px;
+    }
   }
 
   .about h2{
