@@ -114,7 +114,7 @@ const homeTemplate = () => `<!-- Hero -->
                 <p class="card-text">Saat ini, pengelolaan sampah di Indonesia dinilai masih sangat kurang efektif. Timbulan sampah menumpuk menimbulkan banyak masalah baru.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <a class="btn btn-outline-dark btn-sm" href="#" target="_blank" role="button">Read</a>
+                    <a class="btn btn-outline-dark btn-sm" href="https://waste4change.com/blog/menengok-layanan-pengolahan-sampah-di-indonesia-sudahkah-optimal/" target="_blank" role="button">Read</a>
                   </div>
                 </div>
               </div>
