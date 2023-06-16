@@ -13,7 +13,7 @@ const homeTemplate = () => `<!-- Hero -->
         </div>
        
       </div>
-       <a href="#/servicepage" class="mt-2 btn btn-md btn-outline-light" style="background-color: #70B858;" role="button">Excange Now</a>
+       <a href="#/servicepage" class="mt-2 btn btn-md btn-outline-light" style="background-color: #70B858;" role="button" id="exchange">Excange Now</a>
     </div>
   </section>
 <!-- Hero End -->
@@ -117,7 +117,7 @@ const homeTemplate = () => `<!-- Hero -->
 
 <!--Artikel-->
 
-<section class="pt-5 pb-4 text-center container">
+<section class="pt-5 pb-4 text-center container" id="articleContainer">
     <div class="row py-3">
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1 class="fw-bold">Artikel</h1>

@@ -9,6 +9,10 @@ body {
   padding-top: 100px;
 }
 
+footer {
+  background-color: #bef7ac;
+}
+
 /* slide */
 .tales {
   width: 700px;
