@@ -60,19 +60,60 @@ const homeTemplate = () => `<!-- Hero -->
 
 <!-- Jenis sampah End -->
 
-<!-- Panduan website -->
-<section id="panduan">
-  <div class="container pt-5 pb-5">
-    <div class="row text-center mb-3">
-      <div class="col fs-4">
-        <h2 class="fw-bold">Panduan BYETRASH</h2>
+<!-- slide compost -->
+<div class="container pt-5 pb-5">
+      <div class="row text-center mb-3">
+        <div class="col fs-4">
+          <h2 class="fw-bold">Mengolah Sampah Organik jadi Pupuk Kompos</h2>
+        </div>
+      </div>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://github.com/Ardanu001/ByeTrash/blob/main/src/public/pict/slide1.jpg?raw=true" class="d-block w-100 tales" alt="kompos">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Ayo mengompos</h5>
       </div>
     </div>
-    <img src="https://github.com/Ardanu001/ByeTrash/blob/main/src/public/pict/thumb1.png?raw=true" class="img-fluid lazyload" alt="Panduan" />
-  </div>
-</section>
+    <div class="carousel-item">
+      <img src="https://github.com/Ardanu001/ByeTrash/blob/main/src/public/pict/slide2.jpg?raw=true" class="d-block w-100 tales" alt="sampah basah">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Sampah organik basah</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://github.com/Ardanu001/ByeTrash/blob/main/src/public/pict/slide3.jpg?raw=true" class="d-block w-100 tales" alt="sampah kering">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Sampah organik kering</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://github.com/Ardanu001/ByeTrash/blob/main/src/public/pict/slide4.jpeg?raw=true" class="d-block w-100 tales" alt="cara mengompos">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Proses</h5>
+      </div>
+    </div>
 
-<!-- Panduan website end -->
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+<!-- slide compost end -->
+
 
 <!--Artikel-->
 

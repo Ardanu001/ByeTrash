@@ -9,8 +9,13 @@ body {
   padding-top: 100px;
 }
 
-/* Loader */
+/* slide */
+.tales {
+  width: 700px;
+  height: 550px;
+}
 
+/* Loader */
 .loader {
   position: fixed;
   top: 0;
