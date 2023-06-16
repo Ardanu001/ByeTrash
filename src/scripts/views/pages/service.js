@@ -113,6 +113,7 @@ const serviceWebsite = {
       event.preventDefault();
       formBiodataContainer.removeAttribute('id');
       form.reset();
+      button.disabled = true;
 
       const samapahFormContainer = document.querySelector('.tukarPage__form_2');
       const check = document.getElementById('checkbox');
@@ -126,6 +127,8 @@ const serviceWebsite = {
             formBiodataContainer.setAttribute('id', 'hiddenForm');
             samapahFormContainer.removeAttribute('id');
           });
+        } else if (check.checked = false){
+          next.setAttribute('disabled');
         }
 
         const nama = document.getElementById('nama').value;
@@ -139,8 +142,7 @@ const serviceWebsite = {
           alert('Mohon Isi Data Dengan Benar');
           const check = document.getElementById('checkbox');
           check.checked = false;
-          next.disabled = true;
-          return null;
+          button.disabled = true;
         }
       };
 
@@ -275,9 +277,11 @@ const serviceWebsite = {
             buttonConfirm.disabled = true;
           }
 
+          const buttonTukar = document.getElementById('btn-tukar');
           buttonOK.addEventListener('click', (e) => {
             e.preventDefault();
             successContainer.setAttribute('id', 'hiddenForm');
+            buttonTukar.disabled = false;
             form.reset();
           });
         });
