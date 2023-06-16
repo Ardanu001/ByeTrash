@@ -1,3 +1,6 @@
+/* eslint-disable no-constant-condition */
+/* eslint-disable no-cond-assign */
+/* eslint-disable consistent-return */
 /* eslint-disable space-before-blocks */
 /* eslint-disable valid-typeof */
 /* eslint-disable no-alert */
@@ -106,25 +109,19 @@ const serviceWebsite = {
     const button = document.getElementById('btn-tukar');
     const formBiodataContainer = document.querySelector('.tukarPage__form_1');
     const form = document.getElementById('FormTukarSampah');
-
     button.addEventListener('click', (event) => {
       event.preventDefault();
-      const btn = document.getElementById('btn-tukar');
-      if (formBiodataContainer.removeAttribute('id')) {
-        btn.setAttribute('disabled');
-      }
+      formBiodataContainer.removeAttribute('id');
       form.reset();
 
       const samapahFormContainer = document.querySelector('.tukarPage__form_2');
-      const label = document.getElementById('labelData');
       const check = document.getElementById('checkbox');
-      const button = document.getElementById('next');
+      const next = document.getElementById('next');
 
       check.onclick = () => {
-        if (check.checked) {
-          label.textContent = 'Data Anda Sudah Terkonfirmasi';
-          button.removeAttribute('disabled');
-          button.addEventListener('click', (event) => {
+        if (check.checked = true) {
+          next.removeAttribute('disabled');
+          next.addEventListener('click', (event) => {
             event.preventDefault();
             formBiodataContainer.setAttribute('id', 'hiddenForm');
             samapahFormContainer.removeAttribute('id');
@@ -142,6 +139,8 @@ const serviceWebsite = {
           alert('Mohon Isi Data Dengan Benar');
           const check = document.getElementById('checkbox');
           check.checked = false;
+          next.disabled = true;
+          return null;
         }
       };
 
@@ -271,9 +270,9 @@ const serviceWebsite = {
           const form = document.getElementById('FormTukarSampah');
           const buttonOK = document.getElementById('btnOk');
 
-          if (trash == '' || prize == '' || jumlah == '' || harga == ''){
-            alert('Silahkan Isi Data Dengan Benar');
-            buttonOK.setAttribute('disabled');
+          if (trash == '' || prize == '' || jumlah == '' || harga == '' || prize == 0){
+            const buttonConfirm = document.getElementById('completed');
+            buttonConfirm.disabled = true;
           }
 
           buttonOK.addEventListener('click', (e) => {
