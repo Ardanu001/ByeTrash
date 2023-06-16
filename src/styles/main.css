@@ -31,7 +31,7 @@ body {
   width: 75px;
   height: 75px;
   border: 15px solid #dddddd;
-  border-top-color: #7449f5;
+  border-top-color: #70B858;
   border-radius: 50%;
   animation: loading 1s linear infinite;
 }
@@ -89,7 +89,7 @@ body {
 }
 
 #team-member:hover {
-  background-color: #4caf50;
+  background-color: #70B858;
 }
 
 #navChoice {
@@ -97,7 +97,7 @@ body {
 }
 
 #navChoice:hover {
-  border-bottom: solid 2px #4caf50;
+  border-bottom: solid 2px #70B858;
 }
 .map-container iframe {
   left: 0;
@@ -164,7 +164,7 @@ body {
 
 .about h2 {
   text-align: center;
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid #70B858;
   width: 180px;
   margin: 20px;
 }
@@ -259,7 +259,7 @@ body {
 
 .cara-tukar h2 {
   text-align: center;
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid #70B858;
   width: 350px;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -296,9 +296,9 @@ body {
 #btn-tukar {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #4caf50;
+  background-color: #70B858;
   color: #fff;
-  border: solid 2px #4caf50;
+  border: solid 2px #70B858;
   cursor: pointer;
   border-radius: 6px;
   text-decoration: none;
@@ -351,14 +351,14 @@ body {
 
 .tukarPage__form-input input {
   padding: 6px;
-  border: solid 2px #4caf50;
+  border: solid 2px #70B858;
   cursor: pointer;
   background-color: rgb(209, 204, 204);
 }
 
 .tukarPage__form-input input:focus {
   background-color: #fff;
-  border: solid 2px #4caf50;
+  border: solid 2px #70B858;
 }
 
 .tukarPage__check {
@@ -380,9 +380,9 @@ body {
 #completed,
 #btnOk {
   width: 100%;
-  background-color: #4caf50;
+  background-color: #70B858;
   color: white;
-  border: 2px solid #4caf50;
+  border: 2px solid #70B858;
   font-size: 18px;
   padding: 6px;
   border-radius: 10px;
@@ -390,7 +390,7 @@ body {
 }
 
 #btnOk:focus {
-  color: #4caf50;
+  color: #70B858;
   background-color: #fff;
 }
 
@@ -399,17 +399,17 @@ body {
 }
 
 #next:focus {
-  color: #4caf50;
+  color: #70B858;
   background-color: #fff;
 }
 
 #completed:focus {
-  color: #4caf50;
+  color: #70B858;
   background-color: #fff;
 }
 
 #jenissampah {
-  border: solid 2px #4caf50;
+  border: solid 2px #70B858;
   background-color: rgb(209, 204, 204);
   padding: 6px;
 }

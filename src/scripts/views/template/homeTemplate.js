@@ -13,7 +13,7 @@ const homeTemplate = () => `<!-- Hero -->
         </div>
        
       </div>
-       <a href="#/servicepage" class="mt-2 btn btn-md btn-outline-light" style="background-color: #8d9e6f;" role="button">Excange Now</a>
+       <a href="#/servicepage" class="mt-2 btn btn-md btn-outline-light" style="background-color: #70B858;" role="button">Excange Now</a>
     </div>
   </section>
 <!-- Hero End -->
@@ -29,7 +29,7 @@ const homeTemplate = () => `<!-- Hero -->
             <div class="steps__content-width">
                 <h1 class="h2 mb-4 fw-bold">Sampah Organik</h1>
                 <p class="mb-4">Sampah organik disebut sampah basah (garbage), karena sebagian besar cukup banyak mengandung air. Sampah rumah tangga termasuk sebagian besar contoh bahan organik.</p>
-                <a href="#" target="_blank" class="mt-2 btn btn-md btn-outline-light" role="button" style="background-color: #8d9e6f;">Read more</a>
+                <a href="#" target="_blank" class="mt-2 btn btn-md btn-outline-light" role="button" style="background-color: #70B858;">Read more</a>
             </div>
         </div>
     </div>  
@@ -47,7 +47,7 @@ const homeTemplate = () => `<!-- Hero -->
             <div class="steps__content-width">
                 <h1 class="h2 mb-4 fw-bold">Sampah Anorganik</h1>
                 <p class="mb-4">Sampah Anorganik diartikan sebagai sampah yang dihasilkan dari bahan  non hayati berupa produk sinterik atau hasil proses teknologi pengolahan bahan tambang. </p>
-                <a href="#" target="_blank" class="mt-2 btn btn-md btn-outline-light" role="button" style="background-color: #8d9e6f;"><i class="bi bi-github"></i> Read more</a>
+                <a href="#" target="_blank" class="mt-2 btn btn-md btn-outline-light" role="button" style="background-color: #70B858;"><i class="bi bi-github"></i> Read more</a>
             </div>
         </div>
     </div>  

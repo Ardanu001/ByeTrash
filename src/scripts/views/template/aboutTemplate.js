@@ -55,7 +55,7 @@ const aboutTemplate = () => `
 
         <div class="team-card">
           <img
-          src="https://github.com/Ardanu001/ByeTrash/blob/main/src/public/pict/profile.jpg?raw=true"
+          src="https://github.com/Ardanu001/ByeTrash/blob/main/src/public/pict/profile-alip.jpg?raw=true"
           class="img-fluid"
           alt="Team Member 3" 
           />
@@ -65,7 +65,7 @@ const aboutTemplate = () => `
 
         <div class="team-card">
           <img
-          src="https://github.com/Ardanu001/ByeTrash/blob/main/src/public/pict/profile-alip.jpg?raw=true"
+          src="https://github.com/Ardanu001/ByeTrash/blob/main/src/public/pict/profile.jpg?raw=true"
           class="img-fluid"
           alt="Team Member 4" 
           />
