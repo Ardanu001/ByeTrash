@@ -14,7 +14,7 @@ const serviceWebsite = {
     return `
              <section id="sevicepage"></section>
              <div class="tukarPage">
-        <form method="post" id="FormTukarSampah">
+        <form method="post" action="addData()" id="FormTukarSampah">
         <div class="tukarPage__form_1" id="hiddenForm">
             <div class="tukarPage__title">
                 <h1>Tukar Sampah</h1>
@@ -49,7 +49,7 @@ const serviceWebsite = {
                         <p id="labelData">Data Anda Sudah Benar ?</p>
                     </div>
                     <div class="tukarPage__button">
-                        <button id="next" disabled>Berikutnya</button>
+                        <button id="next" type="submit" disabled>Berikutnya</button>
                     </div>
             </div>
             <div class="tukarPage__form_2" id="hiddenForm">
@@ -105,10 +105,15 @@ const serviceWebsite = {
     homeContainer.innerHTML = seviceTemplate();
     const button = document.getElementById('btn-tukar');
     const formBiodataContainer = document.querySelector('.tukarPage__form_1');
+    const form = document.getElementById('FormTukarSampah');
 
     button.addEventListener('click', (event) => {
       event.preventDefault();
-      formBiodataContainer.removeAttribute('id');
+      const btn = document.getElementById('btn-tukar');
+      if (formBiodataContainer.removeAttribute('id')) {
+        btn.setAttribute('disabled');
+      }
+      form.reset();
 
       const samapahFormContainer = document.querySelector('.tukarPage__form_2');
       const label = document.getElementById('labelData');
@@ -124,8 +129,19 @@ const serviceWebsite = {
             formBiodataContainer.setAttribute('id', 'hiddenForm');
             samapahFormContainer.removeAttribute('id');
           });
-        } else {
-          button.setAttribute('disabled');
+        }
+
+        const nama = document.getElementById('nama').value;
+        const alamat = document.getElementById('alamat').value;
+        const namaBank = document.getElementById('namabank').value;
+        const noRekening = document.getElementById('norekening').value;
+        const email = document.getElementById('email').value;
+        const notelpon = document.getElementById('notelpon').value;
+
+        if (nama == '' || alamat == '' || namaBank == '' || noRekening == '' || notelpon == '' || email == ''){
+          alert('Mohon Isi Data Dengan Benar');
+          const check = document.getElementById('checkbox');
+          check.checked = false;
         }
       };
 
@@ -223,6 +239,8 @@ const serviceWebsite = {
         document.addEventListener('DOMContentLoaded', () => {
           const form = document.getElementById('FormTukarSampah');
           form.addEventListener('submit', (e) => {
+            const button = document.getElementById('btn-tukar');
+            button.setAttribute('disabled');
             e.preventDefault();
             addData();
             form.reset();
@@ -240,6 +258,8 @@ const serviceWebsite = {
           const user = document.getElementById('nama').value;
           const trash = document.getElementById('jenissampah').value;
           const prize = document.getElementById('total').value;
+          const jumlah = document.getElementById('jumlah').value;
+          const harga = document.getElementById('harga').value;
           const userContainer = document.getElementById('user');
           const trashContainer = document.getElementById('trashCat');
           const prizeContainer = document.getElementById('prize');
@@ -250,6 +270,12 @@ const serviceWebsite = {
 
           const form = document.getElementById('FormTukarSampah');
           const buttonOK = document.getElementById('btnOk');
+
+          if (trash == '' || prize == '' || jumlah == '' || harga == ''){
+            alert('Silahkan Isi Data Dengan Benar');
+            buttonOK.setAttribute('disabled');
+          }
+
           buttonOK.addEventListener('click', (e) => {
             e.preventDefault();
             successContainer.setAttribute('id', 'hiddenForm');
