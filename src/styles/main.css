@@ -4,6 +4,76 @@ body {
   font-family: "Poppins", sans-serif !important;
   padding-top: 100px;
 }
+
+/* Loader */
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  transition: opacity 0.75s, visibility 0.75s;
+  z-index: 9999999;
+}
+
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: #7449f5;
+  border-radius: 50%;
+  animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  10% {
+    transform: translate(-50%, -50%) rotate(36deg);
+  }
+  20% {
+    transform: translate(-50%, -50%) rotate(72deg);
+  }
+  30% {
+    transform: translate(-50%, -50%) rotate(108deg);
+  }
+  40% {
+    transform: translate(-50%, -50%) rotate(144deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  60% {
+    transform: translate(-50%, -50%) rotate(216deg);
+  }
+  70% {
+    transform: translate(-50%, -50%) rotate(252deg);
+  }
+  80% {
+    transform: translate(-50%, -50%) rotate(288deg);
+  }
+  90% {
+    transform: translate(-50%, -50%) rotate(324deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* End Loader */
+
 .map-container {
   overflow: hidden;
   padding-bottom: 56.25%;
@@ -11,7 +81,7 @@ body {
   height: 0;
 }
 
-#team-member{
+#team-member {
   text-decoration: none;
   font-weight: lighter;
   color: #000;
@@ -22,12 +92,12 @@ body {
   background-color: #4caf50;
 }
 
-#navChoice{
+#navChoice {
   text-decoration: none;
 }
 
-#navChoice:hover{
-  border-bottom: solid 2px #4caf50 ;
+#navChoice:hover {
+  border-bottom: solid 2px #4caf50;
 }
 .map-container iframe {
   left: 0;
@@ -248,7 +318,7 @@ body {
   display: none;
 }
 
-.tukarPage__form_1{
+.tukarPage__form_1 {
   padding: 20px;
 }
 
@@ -265,7 +335,7 @@ body {
   font-size: 18px;
 }
 
-.tukarPage__form-input{
+.tukarPage__form-input {
   display: flex;
   flex-direction: column;
   margin-bottom: 8px;
@@ -282,7 +352,7 @@ body {
   background-color: rgb(209, 204, 204);
 }
 
-.tukarPage__form-input input:focus{
+.tukarPage__form-input input:focus {
   background-color: #fff;
   border: solid 2px #4caf50;
 }
@@ -294,15 +364,17 @@ body {
 
 .tukarPage__check #checkbox {
   width: 20px;
-  width: 20px;   
+  width: 20px;
 }
 
 .tukarPage__check p {
   font-size: 18px;
-  margin: 8px ;
+  margin: 8px;
 }
 
-#next, #completed, #btnOk {
+#next,
+#completed,
+#btnOk {
   width: 100%;
   background-color: #4caf50;
   color: white;
@@ -351,7 +423,7 @@ body {
   padding: 20px;
 }
 
-.img-check{
+.img-check {
   margin: 0 auto;
   width: 240px;
 }
@@ -369,19 +441,19 @@ body {
 
 @-webkit-keyframes berputar {
   0% {
-      -webkit-transform: rotate(-360deg);
-      width: 200px;
+    -webkit-transform: rotate(-360deg);
+    width: 200px;
   }
   100% {
-      -webkit-transform: rotate(0deg);
-      width: 240px;
+    -webkit-transform: rotate(0deg);
+    width: 240px;
   }
 }
 
 @media (max-width: 1000px) {
   .tukarPage {
-      padding-left: 200px;
-      padding-right: 200px;
+    padding-left: 200px;
+    padding-right: 200px;
   }
 
   .caption {
@@ -390,8 +462,8 @@ body {
   }
 
   .tukarPage__check p {
-      font-size: 18px;
-      padding-left: 4px;
+    font-size: 18px;
+    padding-left: 4px;
   }
 
   .confirm {
@@ -401,13 +473,12 @@ body {
     justify-content: center;
     padding: 20px;
   }
-  
 }
 
 @media (max-width: 700px) {
   .tukarPage {
-      padding-left: 50px;
-      padding-right: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .caption {
@@ -424,8 +495,8 @@ body {
   }
 
   .tukarPage__check p {
-      font-size: 16px;
-      padding-left: 4px;
+    font-size: 16px;
+    padding-left: 4px;
   }
 
   .service-container {
@@ -442,5 +513,4 @@ body {
   .team-card {
     width: 200px;
   }
-  
 }
