@@ -29,6 +29,8 @@ const homeTemplate = () => `<!-- Hero -->
             <div class="steps__content-width">
                 <h1 class="h2 mb-4 fw-bold">Sampah Organik</h1>
                 <p class="mb-4">Sampah organik disebut sampah basah (garbage), karena sebagian besar cukup banyak mengandung air. Sampah rumah tangga termasuk sebagian besar contoh bahan organik.</p>
+                <p>Berdasarkan jenisnya sampah organik digolongkan menjadi 2 antara lain, sampah organik basah dan kering.
+</p>
                 <a href="https://www.detik.com/jabar/berita/d-6262012/sampah-organik-adalah-jenis-contoh-manfaat-dan-cara-mengolah" target="_blank" class="mt-2 btn btn-md btn-outline-light" role="button" style="background-color: #70B858;">Read more</a>
             </div>
         </div>
@@ -47,6 +49,7 @@ const homeTemplate = () => `<!-- Hero -->
             <div class="steps__content-width">
                 <h1 class="h2 mb-4 fw-bold">Sampah Anorganik</h1>
                 <p class="mb-4">Sampah Anorganik diartikan sebagai sampah yang dihasilkan dari bahan  non hayati berupa produk sinterik atau hasil proses teknologi pengolahan bahan tambang. </p>
+                <p>Dikutip dari buku Implementasi Program SDGs pada Kegiatan Pendidikan Lingkungan, jenis limbah anorganik dibagi menjadi dua, yaitu Limbah lunak anorganik dan Limbah keras anorganik.</p>
                 <a href="https://www.cnnindonesia.com/edukasi/20230125160910-569-904779/sampah-anorganik-pengertian-contoh-jenis-dan-cara-mengelola" target="_blank" class="mt-2 btn btn-md btn-outline-light" role="button" style="background-color: #70B858;">Read more</a>
             </div>
         </div>
