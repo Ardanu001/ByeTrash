@@ -1,3 +1,9 @@
+/* eslint-disable space-before-blocks */
+/* eslint-disable valid-typeof */
+/* eslint-disable no-alert */
+/* eslint-disable max-len */
+/* eslint-disable no-unused-vars */
+/* eslint-disable comma-dangle */
 /* eslint-disable radix */
 /* eslint-disable eqeqeq */
 /* eslint-disable no-shadow */
@@ -157,6 +163,70 @@ const serviceWebsite = {
           const total = document.querySelector('#total');
           const op = harga * jumlah.value;
           total.value = op;
+        });
+
+        const trashData = [];
+        const RENDER_EVENT = 'render-book';
+        const STORAGE_KEY = 'BOOKSHELF_APPS';
+        const SAVED_EVENT = 'saved-book';
+
+        function generateDataObject(id, nama, alamat, namaBank, nomorRekening, email, noTelpon, jenisSampah, jumlahSampah, hargaSampah, totalHarga) {
+          return {
+            id, nama, alamat, namaBank, nomorRekening, email, noTelpon, jenisSampah, jumlahSampah, hargaSampah, totalHarga
+          };
+        }
+
+        function genID() {
+          return +new Date();
+        }
+
+        function isStorageExist() {
+          if (typeof (Storage) === undefined) {
+            alert('Browser kamu tidak mendukung local storage');
+            return false;
+          }
+          return true;
+        }
+
+        document.addEventListener(SAVED_EVENT, () => {
+          console.log(localStorage.getItem(STORAGE_KEY));
+        });
+
+        function saveData() {
+          if (isStorageExist()) {
+            const parsed = JSON.stringify(trashData);
+            localStorage.setItem(STORAGE_KEY, parsed);
+            document.dispatchEvent(new Event(SAVED_EVENT));
+          }
+        }
+
+        function addData() {
+          const id = genID();
+          const nama = document.getElementById('nama').value;
+          const alamat = document.getElementById('alamat').value;
+          const namaBank = document.getElementById('namabank').value;
+          const noRekening = document.getElementById('norekening').value;
+          const email = document.getElementById('email').value;
+          const notelpon = document.getElementById('notelpon').value;
+          const jenis = document.getElementById('jenissampah').value;
+          const jumlah = document.getElementById('jumlah').value;
+          const harga = document.getElementById('harga').value;
+          const total = parseInt(document.getElementById('total').value);
+
+          const dataTarget = generateDataObject(id, nama, alamat, namaBank, noRekening, email, notelpon, jenis, jumlah, harga, total);
+          trashData.push(dataTarget);
+
+          document.dispatchEvent(new Event(RENDER_EVENT));
+          saveData();
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+          const form = document.getElementById('FormTukarSampah');
+          form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            addData();
+            form.reset();
+          });
         });
 
         const sampahFormContainer = document.querySelector('.tukarPage__form_2');
