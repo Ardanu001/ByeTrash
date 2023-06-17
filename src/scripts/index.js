@@ -26,4 +26,5 @@ window.addEventListener("load", () => {
   loader.addEventListener("transitioned", () => {
     document.body.removeChild("loader");
   });
+  App.renderpage();
 });
