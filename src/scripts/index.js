@@ -8,6 +8,7 @@ const App = new app({
 });
 
 window.addEventListener("hashchange", () => {
+   App.wait(2);
    App.renderpage();
 });
 
