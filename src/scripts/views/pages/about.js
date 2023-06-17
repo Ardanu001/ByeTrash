@@ -9,6 +9,7 @@ const aboutWebsite = {
 
   async afterRender() {
     const homeContainer = document.querySelector('#aboutpage');
+    homeContainer.focus();
     homeContainer.innerHTML = aboutTemplate();
   },
 };
