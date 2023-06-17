@@ -10,11 +10,6 @@ body {
 }
 
 
-
-.navbar-toggler.collapsed .navbar-close-icon {
-  display: none;
-}
-
 .navbar-toggler.collapsed .navbar-toggler-icon {
   display: inline-block;
   z-index: 2;
