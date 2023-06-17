@@ -1,7 +1,7 @@
 const DrawerInitiator = {
   init({ content, button }) {
     button.addEventListener('click', (event) => {
-      event.stopPropagation();
+      event.preventDefault();
       button.setAttribute('data-bs-toggle', 'collapse');
       button.setAttribute('data-bs-target', '#navbarNav');
     });
