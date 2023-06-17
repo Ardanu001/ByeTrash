@@ -23,7 +23,6 @@ body {
 }
 .navbar-toggler.collapsed .navbar-toggler-icon {
   display: inline-block;
-  z-index: 1000;
 }
 
 .bg-green {
