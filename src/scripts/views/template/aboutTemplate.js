@@ -1,24 +1,37 @@
 const aboutTemplate = () => `
-    <div class="about-container">
-    <div class="section">
-      <div class="about-section">
-        <div class="">
-          <h2 class="fw-bold">Tentang Byetrash</h2>
-          <p>
-            Byetrash adalah website yang memfasilitasi masyarakat untuk
-            mengelola sampah supaya bisa mengurangi polusi. Di website ini
-            masyarakat bisa menukarkan sampah yang mereka miliki menjadi uang
-            tunai berdasarkan jenis sampah yang ditukarkan. Dengan adanya
-            website ini diharapkan masyarakat semakin sadar akan lingkungan
-            dan tidak membuang sampah sembarangan karena mereka bisa
-            menukarkannya menjadi uang tunai.
-          </p>
+  <div class="about-container">
+    <section class="steps bg-green">
+      <div class="container-custom">
+        <div class="row ms-2 me-2">
+          <div
+            class="col-12 col-sm-6 d-md-flex justify-content-md-center order-sm-1"
+          >
+            <img
+              src="https://github.com/Ardanu001/ByeTrash/blob/main/src/public/logo/logo-2.png?raw=true"
+              alt="Logo ByeTrash"
+              class="img-fluid pb-2 steps__section-thumbnail"
+              width="300"
+              height="300"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-12 col-sm-6">
+            <div class="steps__content-width">
+              <h1 class="h2 mb-4 fw-bold">Tentang ByeTrash</h1>
+              <p>
+                Byetrash adalah website yang memfasilitasi masyarakat untuk
+                mengelola sampah supaya bisa mengurangi polusi. Di website ini
+                masyarakat bisa menukarkan sampah yang mereka miliki menjadi uang
+                tunai berdasarkan jenis sampah yang ditukarkan. Dengan adanya
+                website ini diharapkan masyarakat semakin sadar akan lingkungan dan
+                tidak membuang sampah sembarangan karena mereka bisa menukarkannya
+                menjadi uang tunai.
+              </p>
+            </div>
+          </div>
         </div>
-        <img
-          src="https://github.com/Ardanu001/ByeTrash/blob/main/src/public/logo/logo-2.png?raw=true"
-          class="img-fluid"
-        />
-    </div>
+      </div>
+    </section>
 
     <div class="about mt-4">
       <h2

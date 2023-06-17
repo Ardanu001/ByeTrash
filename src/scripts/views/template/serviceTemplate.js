@@ -1,22 +1,37 @@
 const seviceTemplate = () => `
 <div class="service-container">
-  <div class="section">
-      <div class="about-section">
-        <div class="">
-          <h2 class="fw-bold">Tukarkan Sampah di Byetrash</h2>
-          <p>
-            Dengan menukarkan sampah , kamu ikut serta dalam upaya membangun
-            masa depan yang lebih bersih, berkelanjutan, dan lebih baik bagi
-            generasi mendatang. Dengan setiap sampah yang kamu tukarkan, kamu
-            memberikan kontribusi nyata dalam menjaga lingkungan hidup kita dari
-            polusi dan dampak negatifnya.
-          </p>
+
+  <section class="steps bg-green">
+    <div class="container-custom">
+      <div class="row ms-2 me-2">
+        <div
+          class="col-12 col-sm-6 d-md-flex justify-content-md-center order-sm-1"
+        >
+          <img
+            src="https://github.com/Ardanu001/ByeTrash/blob/main/src/public/pict/tukarkan-sampah.png?raw=true"
+            alt="Logo ByeTrash"
+            class="img-fluid pb-2 steps__section-thumbnail"
+            width="300"
+            height="300"
+            loading="lazy"
+          />
         </div>
-        <img
-          src="https://github.com/Ardanu001/ByeTrash/blob/main/src/public/pict/tukarkan-sampah.png?raw=true"
-          class="img-fluid"
-        />
+        <div class="col-12 col-sm-6">
+          <div class="steps__content-width">
+            <h1 class="h2 mb-4 fw-bold">Tukarkan Sampah di Byetrash</h1>
+            <p>
+              Dengan menukarkan sampah , kamu ikut serta dalam upaya membangun
+              masa depan yang lebih bersih, berkelanjutan, dan lebih baik bagi
+              generasi mendatang. Dengan setiap sampah yang kamu tukarkan, kamu
+              memberikan kontribusi nyata dalam menjaga lingkungan hidup kita dari
+              polusi dan dampak negatifnya.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
+
 
   <div class="cara-tukar">
     <h2 class="fw-bold">Panduan Tukar Sampah</h2>
