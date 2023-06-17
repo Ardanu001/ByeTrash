@@ -15,7 +15,7 @@ window.addEventListener("hashchange", () => {
   loader.addEventListener("transitioned", () => {
     document.body.removeChild("loader");
   });
-  
+   App.renderpage();
 });
 
 window.addEventListener("load", () => {
@@ -26,5 +26,4 @@ window.addEventListener("load", () => {
   loader.addEventListener("transitioned", () => {
     document.body.removeChild("loader");
   });
-  App.renderpage();
 });
