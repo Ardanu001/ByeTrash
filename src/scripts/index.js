@@ -8,10 +8,6 @@ const App = new app({
 });
 
 window.addEventListener("hashchange", () => {
-  App.renderpage();
-});
-
-window.addEventListener("load", () => {
   const loader = document.querySelector(".loader");
 
   loader.classList.add("loader-hidden");
@@ -30,4 +26,5 @@ window.addEventListener("load", () => {
   loader.addEventListener("transitioned", () => {
     document.body.removeChild("loader");
   });
+  App.renderpage();
 });
