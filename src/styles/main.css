@@ -20,6 +20,10 @@ body {
   display: none;
 }
 
+.navbar-toggler.collapsed .navbar-toggler-icon {
+  display: none;
+}
+
 .bg-green {
   background-color: #e2fdd4;
 }
