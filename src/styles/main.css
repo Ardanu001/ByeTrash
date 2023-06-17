@@ -13,7 +13,7 @@ body {
   display: inline-block;
 }
 .navbar-close-icon {
-  display: block;
+  display: inline-block;
   width: 30px;
   height: 30px;
   line-height: 30px;
