@@ -22,7 +22,7 @@ body {
   display: none;
 }
 .navbar-toggler.collapsed .navbar-toggler-icon {
-  display: inline-block;
+  display: inline;
 }
 
 .bg-green {
