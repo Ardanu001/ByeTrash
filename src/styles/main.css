@@ -19,10 +19,6 @@ body {
   line-height: 30px;
 }
 
-.navbar-toggler.collapsed .navbar-toggler-icon {
-  display: none;
-}
-
 .navbar-toggler.collapsed .navbar-close-icon {
   display: inline-block;
 }
