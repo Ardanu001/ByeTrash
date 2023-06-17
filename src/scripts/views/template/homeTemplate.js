@@ -64,7 +64,7 @@ const homeTemplate = () => `<!-- Hero -->
 <div class="container pt-5 pb-5">
       <div class="row text-center mb-3">
         <div class="col fs-4">
-          <h2 class="fw-bold">Mengolah Sampah Organik jadi Pupuk Kompos</h2>
+          <h2 class="fw-bold">Ubah Sampah Organik ke Kompos</h2>
         </div>
       </div>
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
