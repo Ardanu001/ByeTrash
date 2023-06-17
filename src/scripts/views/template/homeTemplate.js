@@ -139,7 +139,7 @@ const homeTemplate = () => `<!-- Hero -->
               <p class="card-text">Indonesia berhadapan dengan masalah serius sampah. Diperlukan langkah konkret untuk menanganinya secara efektif dan berkelanjutan guna menjaga lingkungan dan kesehatan masyarakat </p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                    <a class="mt-2 btn btn-md btn-outline-light" role="button" style="background-color: #70B858; href="https://maritimefairtrade.org/indonesia-memiliki-masalah-sampah-yang-serius/" target="_blank">Read More</a>
+                    <a class="mt-2 btn btn-md btn-outline-light" role="button" style="background-color: #70B858;" href="https://maritimefairtrade.org/indonesia-memiliki-masalah-sampah-yang-serius/" target="_blank">Read More</a>
                 </div>
               </div>
             </div>
@@ -155,7 +155,7 @@ const homeTemplate = () => `<!-- Hero -->
                 <p class="card-text">Eksplorasi layanan pengolahan sampah di Indonesia dan evaluasi tingkat optimalisasi yang telah dicapai dalam infrastruktur pengelolaan dan program daur ulang di Indonesia</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <a class="mt-2 btn btn-md btn-outline-light" role="button" style="background-color: #70B858; href="https://waste4change.com/blog/menengok-layanan-pengolahan-sampah-di-indonesia-sudahkah-optimal/" target="_blank">Read More</a>
+                    <a class="mt-2 btn btn-md btn-outline-light" role="button" style="background-color: #70B858;" href="https://waste4change.com/blog/menengok-layanan-pengolahan-sampah-di-indonesia-sudahkah-optimal/" target="_blank">Read More</a>
                   </div>
                 </div>
               </div>
@@ -171,7 +171,7 @@ const homeTemplate = () => `<!-- Hero -->
                 <p class="card-text">Cara praktis menghasilkan kompos berkualitas tinggi dari sampah rumah tangga tanpa menciptakan bau yang tidak sedap, mendukung pengurangan limbah dan pertanian berkelanjutan</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <a class="mt-2 btn btn-md btn-outline-light" role="button" style="background-color: #70B858; href="https://www.kompas.com/homey/read/2021/07/06/080600276/cara-membuat-kompos-dari-sampah-rumah-tangga-tanpa-bau?page=all" target="_blank">Read More</a>
+                    <a class="mt-2 btn btn-md btn-outline-light" role="button" style="background-color: #70B858;" href="https://www.kompas.com/homey/read/2021/07/06/080600276/cara-membuat-kompos-dari-sampah-rumah-tangga-tanpa-bau?page=all" target="_blank">Read More</a>
                   </div>
                 </div>
               </div>
@@ -187,7 +187,7 @@ const homeTemplate = () => `<!-- Hero -->
                 <p class="card-text">Upaya mengurangi jumlah sampah plastik rumahan dengan contoh nyata penggunaan kembali yang dapat diadopsi untuk mengurangi dampak negatif terhadap lingkungan</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <a class="mt-2 btn btn-md btn-outline-light" role="button" style="background-color: #70B858; href="https://www.rumah.com/panduan-properti/15-cara-mengurangi-sampah-plastik-rumahan-dan-contoh-daur-ulangnya-27696" target="_blank">Read More</a>
+                    <a class="mt-2 btn btn-md btn-outline-light" role="button" style="background-color: #70B858;" href="https://www.rumah.com/panduan-properti/15-cara-mengurangi-sampah-plastik-rumahan-dan-contoh-daur-ulangnya-27696" target="_blank">Read More</a>
                   </div>
                 </div>
               </div>
@@ -203,7 +203,7 @@ const homeTemplate = () => `<!-- Hero -->
                 <p class="card-text">Panduan sederhana dan efektif untuk mengurangi sampah di rumah dengan praktik yang berdampak positif terhadap lingkungan dan menciptakan perubahan kecil yang signifikan.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <a class="mt-2 btn btn-md btn-outline-light" role="button" style="background-color: #70B858; href="https://perkim.id/rumah/cara-sederhana-dan-efektif-mengurangi-sampah-di-rumah/" target="_blank">Read More</a>
+                    <a class="mt-2 btn btn-md btn-outline-light" role="button" style="background-color: #70B858;" href="https://perkim.id/rumah/cara-sederhana-dan-efektif-mengurangi-sampah-di-rumah/" target="_blank">Read More</a>
                   </div>
                 </div>
               </div>
@@ -219,7 +219,7 @@ const homeTemplate = () => `<!-- Hero -->
                 <p class="card-text">Proses pembuatan pupuk kompos dari sampah organik rumah tangga dengan metode yang mudah dan efisien untuk mendukung keberlanjutan lingkungan dan pertanian yang berkelanjutan</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <a class="mt-2 btn btn-md btn-outline-light" role="button" style="background-color: #70B858; href="https://dlh.palangkaraya.go.id/membuat-kompos-dari-sampah-organik/#:~:text=Penggunaan%20kompos%20bermanfaat%20untuk%20menjaga,untuk%20memenuhi%20kebutuhan%20hara%20tanaman" target="_blank">Read More</a>
+                    <a class="mt-2 btn btn-md btn-outline-light" role="button" style="background-color: #70B858;" href="https://dlh.palangkaraya.go.id/membuat-kompos-dari-sampah-organik/#:~:text=Penggunaan%20kompos%20bermanfaat%20untuk%20menjaga,untuk%20memenuhi%20kebutuhan%20hara%20tanaman" target="_blank">Read More</a>
                   </div>
                 </div>
               </div>
