@@ -17,7 +17,7 @@ body {
 }
 
 .navbar-toggler.collapsed .navbar-close-icon {
-  display: inline-block;
+  display: none;
 }
 
 .bg-green {
