@@ -9,10 +9,10 @@ body {
   padding-top: 100px;
 }
 
-.navbar-toggler-icon {
+.navbar-close-icon {
   display: none;
 }
-.navbar-close-icon {
+.navbar-toggler-icon {
   display: inline-block;
   width: 30px;
   height: 30px;
