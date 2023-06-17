@@ -10,7 +10,7 @@ body {
 }
 
 .navbar-close-icon {
-  display: none;
+  display: inline-block;
 }
 .navbar-toggler-icon {
   display: inline-block;
@@ -22,7 +22,7 @@ body {
   display: none;
 }
 .navbar-toggler.collapsed .navbar-toggler-icon {
-  display: inline;
+  display: inline-block;
 }
 
 .bg-green {
