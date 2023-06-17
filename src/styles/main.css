@@ -10,7 +10,7 @@ body {
 }
 
 .navbar-toggler-icon {
-  display: none;
+  display: inline-block;
 }
 .navbar-close-icon {
   display: none;
