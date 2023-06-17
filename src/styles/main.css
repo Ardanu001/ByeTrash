@@ -13,10 +13,7 @@ body {
   display: none;
 }
 .navbar-close-icon {
-  display: none;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
+  display: inline-block;
 }
 .navbar-toggler.collapsed .navbar-close-icon {
   display: none;
