@@ -25,3 +25,14 @@ window.addEventListener("load", () => {
   });
   App.renderpage();
 });
+
+window.addEventListener("hashchange", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader-hidden");
+
+  loader.addEventListener("transitioned", () => {
+    document.body.removeChild("loader");
+  });
+  App.renderpage();
+});
