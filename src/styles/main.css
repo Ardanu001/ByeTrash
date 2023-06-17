@@ -17,7 +17,7 @@ body {
 }
 
 .navbar-toggler.collapsed .navbar-close-icon {
-  display: none;
+  display: inline-block;
 }
 
 .navbar-toggler.collapsed .navbar-toggler-icon {
