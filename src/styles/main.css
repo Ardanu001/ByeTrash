@@ -10,10 +10,10 @@ body {
 }
 
 .navbar-toggler-icon {
-  display: inline-block;
+  display: none;
 }
 .navbar-close-icon {
-  display: none;
+  display: flex;
   width: 30px;
   height: 30px;
   line-height: 30px;
