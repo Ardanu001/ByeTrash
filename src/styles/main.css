@@ -13,7 +13,7 @@ body {
   display: none;
 }
 .navbar-close-icon {
-  display:inline-block;
+  display: inline-block;
   width: 30px;
   height: 30px;
   line-height: 30px;
@@ -24,10 +24,6 @@ body {
 .navbar-toggler.collapsed .navbar-toggler-icon {
   display: inline-block;
 }
-
-
-
-
 
 .bg-green {
   background-color: #e2fdd4;
@@ -71,7 +67,7 @@ ul.socmed li {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 120vw;
   height: 100vh;
   display: flex;
   justify-content: center;
