@@ -10,12 +10,12 @@ body {
 }
 
 .navbar-toggler-icon {
-  display: none;
+  display: inline-block;
   z-index: 2;
 }
 
 .navbar-close-icon {
-  display: inline-block;
+  display: none;
   width: 30px;
   height: 30px;
   line-height: 30px;
