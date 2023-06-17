@@ -10,19 +10,19 @@ body {
 }
 
 .navbar-toggler-icon {
-  display: block;
+  display: inline-block;
 }
 .navbar-close-icon {
-  display: inline-block;
+  display: block;
   width: 30px;
   height: 30px;
   line-height: 30px;
 }
 .navbar-toggler.collapsed .navbar-close-icon {
-  display: inline-block;
+  display: block;
 }
 .navbar-toggler.collapsed .navbar-toggler-icon {
-  display: block;
+  display: inline-block;
 }
 
 .bg-green {
