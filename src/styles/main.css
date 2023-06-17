@@ -13,7 +13,7 @@ body {
   display: none;
 }
 .navbar-close-icon {
-  display: none;
+  display: inline-block;
   width: 30px;
   height: 30px;
   line-height: 30px;
@@ -23,6 +23,7 @@ body {
 }
 .navbar-toggler.collapsed .navbar-toggler-icon {
   display: inline-block;
+  z-index: 1000;
 }
 
 .bg-green {
