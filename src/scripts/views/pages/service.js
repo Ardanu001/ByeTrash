@@ -120,20 +120,6 @@ const serviceWebsite = {
       const check = document.getElementById('checkbox');
       const next = document.getElementById('next');
 
-      const nama = document.getElementById('nama').value;
-        const alamat = document.getElementById('alamat').value;
-        const namaBank = document.getElementById('namabank').value;
-        const noRekening = document.getElementById('norekening').value;
-        const email = document.getElementById('email').value;
-        const notelpon = document.getElementById('notelpon').value;
-
-        if (nama == '' || alamat == '' || namaBank == '' || noRekening == '' || notelpon == '' || email == ''){
-          alert('Mohon Isi Data Dengan Benar');
-          const check = document.getElementById('checkbox');
-          check.checked = false;
-          next.disabled = true;
-        }
-
         if (check.checked = true) {
           next.removeAttribute('disabled');
           next.addEventListener('click', (event) => {
@@ -147,6 +133,19 @@ const serviceWebsite = {
           button.disabled = true;
         }
 
+        const nama = document.getElementById('nama').value;
+        const alamat = document.getElementById('alamat').value;
+        const namaBank = document.getElementById('namabank').value;
+        const noRekening = document.getElementById('norekening').value;
+        const email = document.getElementById('email').value;
+        const notelpon = document.getElementById('notelpon').value;
+
+        if (nama == '' || alamat == '' || namaBank == '' || noRekening == '' || notelpon == '' || email == ''){
+          alert('Mohon Isi Data Dengan Benar');
+          const check = document.getElementById('checkbox');
+          check.checked = false;
+          button.disabled = true;
+        }
 
       const jenis = document.getElementById('jenissampah');
       jenis.addEventListener('change', (event) => {
