@@ -118,8 +118,21 @@ const serviceWebsite = {
       const samapahFormContainer = document.querySelector('.tukarPage__form_2');
       const check = document.getElementById('checkbox');
       const next = document.getElementById('next');
+      
+      const nama = document.getElementById('nama').value;
+      const alamat = document.getElementById('alamat').value;
+      const namaBank = document.getElementById('namabank').value;
+      const noRekening = document.getElementById('norekening').value;
+      const email = document.getElementById('email').value;
+      const notelpon = document.getElementById('notelpon').value;
+      
+        if (nama == '' || alamat == '' || namaBank == '' || noRekening == '' || notelpon == '' || email == ''){
+          alert('Mohon Isi Data Dengan Benar');
+          const check = document.getElementById('checkbox');
+          check.checked = false;
+          next.disabled = true;
+        }
 
-  check.onclick = () => {
         if (check.checked = true) {
           next.removeAttribute('disabled');
           next.addEventListener('click', (event) => {
@@ -130,22 +143,6 @@ const serviceWebsite = {
         } else if (check.checked  = false){
           next.setAttribute('disabled');
         }
-  };
-
-        const nama = document.getElementById('nama').value;
-        const alamat = document.getElementById('alamat').value;
-        const namaBank = document.getElementById('namabank').value;
-        const noRekening = document.getElementById('norekening').value;
-        const email = document.getElementById('email').value;
-        const notelpon = document.getElementById('notelpon').value;
-
-        if (nama == '' || alamat == '' || namaBank == '' || noRekening == '' || notelpon == '' || email == ''){
-          alert('Mohon Isi Data Dengan Benar');
-          const check = document.getElementById('checkbox');
-          check.checked = false;
-          next.disabled = true;
-        }
-  
 
       const jenis = document.getElementById('jenissampah');
       jenis.addEventListener('change', (event) => {
