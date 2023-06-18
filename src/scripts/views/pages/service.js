@@ -141,8 +141,6 @@ const serviceWebsite = {
           alert('Mohon Isi Data Dengan Benar');
           const check = document.getElementById('checkbox');
           check.checked = false;
-          next.disabled = true;
-          button.disabled = true;
         }
       
       const jenis = document.getElementById('jenissampah');
