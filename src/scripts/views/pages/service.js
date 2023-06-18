@@ -129,6 +129,7 @@ const serviceWebsite = {
           button.disabled = true;
         } else if (check.checked = false){
           next.setAttribute('disabled');
+          button.disabled = true;
         }
 
         const nama = document.getElementById('nama').value;
