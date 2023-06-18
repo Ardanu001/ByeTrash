@@ -147,7 +147,7 @@ const serviceWebsite = {
       };
 
       const jenis = document.getElementById('jenissampah');
-      jenis.addEventListener('change', (event) => {
+      jenis.addEventListener('load', (event) => {
         event.preventDefault();
         if (jenis.value == 'Plastik') {
           document.querySelector('#harga').value = 2000;
@@ -174,7 +174,7 @@ const serviceWebsite = {
         }
 
         const jumlah = document.querySelector('#jumlah');
-        jumlah.addEventListener('change', (e) => {
+        jumlah.addEventListener('load', (e) => {
           e.preventDefault();
           const harga = parseInt(document.querySelector('#harga').value);
           const total = document.querySelector('#total');
