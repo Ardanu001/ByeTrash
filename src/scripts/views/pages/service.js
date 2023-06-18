@@ -118,6 +118,17 @@ const serviceWebsite = {
       const samapahFormContainer = document.querySelector('.tukarPage__form_2');
       const check = document.getElementById('checkbox');
       const next = document.getElementById('next');
+
+      if (check.checked = true) {
+        next.removeAttribute('disabled');
+        next.addEventListener('click', (event) => {
+          event.preventDefault();
+          formBiodataContainer.setAttribute('id', 'hiddenForm');
+          samapahFormContainer.removeAttribute('id');
+        });
+      } else if (check.checked  = false){
+        next.setAttribute('disabled');
+      }
       
       const nama = document.getElementById('nama').value;
       const alamat = document.getElementById('alamat').value;
@@ -128,20 +139,8 @@ const serviceWebsite = {
       
         if (nama == '' || alamat == '' || namaBank == '' || noRekening == '' || notelpon == '' || email == ''){
           alert('Mohon Isi Data Dengan Benar');
-          const check = document.getElementById('checkbox');
           check.checked = false;
           next.disabled = true;
-        }
-
-        if (check.checked = true) {
-          next.removeAttribute('disabled');
-          next.addEventListener('click', (event) => {
-            event.preventDefault();
-            formBiodataContainer.setAttribute('id', 'hiddenForm');
-            samapahFormContainer.removeAttribute('id');
-          });
-        } else if (check.checked  = false){
-          next.setAttribute('disabled');
         }
 
       const jenis = document.getElementById('jenissampah');
