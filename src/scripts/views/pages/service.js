@@ -130,7 +130,6 @@ const serviceWebsite = {
         } else if (check.checked = false){
           next.setAttribute('disabled');
         }
-    
   };
 
         const nama = document.getElementById('nama').value;
@@ -144,7 +143,7 @@ const serviceWebsite = {
           alert('Mohon Isi Data Dengan Benar');
           const check = document.getElementById('checkbox');
           check.checked = false;
-          button.disabled = true;
+          next.disabled = true;
         }
   
 
