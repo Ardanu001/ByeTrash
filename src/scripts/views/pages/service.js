@@ -119,7 +119,7 @@ const serviceWebsite = {
       const check = document.getElementById('checkbox');
       const next = document.getElementById('next');
 
-
+  check.checked = () => {
         if (check.checked = true) {
           next.removeAttribute('disabled');
           next.addEventListener('click', (event) => {
@@ -130,6 +130,8 @@ const serviceWebsite = {
         } else if (check.checked = false){
           next.setAttribute('disabled');
         }
+    
+  };
 
         const nama = document.getElementById('nama').value;
         const alamat = document.getElementById('alamat').value;
