@@ -119,7 +119,6 @@ const serviceWebsite = {
       const check = document.getElementById('checkbox');
       const next = document.getElementById('next');
 
-      check.onclick = () => {
         if (check.checked = true) {
           next.removeAttribute('disabled');
           next.addEventListener('click', (event) => {
@@ -145,7 +144,6 @@ const serviceWebsite = {
           next.disabled = true;
           button.disabled = true;
         }
-      };
       
       const jenis = document.getElementById('jenissampah');
       jenis.addEventListener('change', (event) => {
