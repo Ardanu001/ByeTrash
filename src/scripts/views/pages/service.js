@@ -118,8 +118,7 @@ const serviceWebsite = {
       const samapahFormContainer = document.querySelector('.tukarPage__form_2');
       const check = document.getElementById('checkbox');
       const next = document.getElementById('next');
-
-      check.onclick = () => {
+      
         if (check.checked = true) {
           next.removeAttribute('disabled');
           next.addEventListener('click', (event) => {
@@ -144,7 +143,7 @@ const serviceWebsite = {
           check.checked = false;
           button.disabled = true;
         }
-      };
+      
 
       const jenis = document.getElementById('jenissampah');
       jenis.addEventListener('change', (event) => {
