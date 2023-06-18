@@ -120,16 +120,18 @@ const serviceWebsite = {
       const next = document.getElementById('next');
 
       check.onclick = () => {
-        if (check.checked = true) {
-          next.removeAttribute('disabled');
-          next.addEventListener('click', (event) => {
-            event.preventDefault();
-            formBiodataContainer.setAttribute('id', 'hiddenForm');
-            samapahFormContainer.removeAttribute('id');
-          });
-        } else if (check.checked = false){
+        if (check.checked = false){
           next.setAttribute('disabled');
-        }
+        } else {
+          if (check.checked = true) {
+            next.removeAttribute('disabled');
+            next.addEventListener('click', (event) => {
+              event.preventDefault();
+              formBiodataContainer.setAttribute('id', 'hiddenForm');
+              samapahFormContainer.removeAttribute('id');
+            });
+          } 
+        } 
 
         const nama = document.getElementById('nama').value;
         const alamat = document.getElementById('alamat').value;
