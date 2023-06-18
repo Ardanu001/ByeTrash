@@ -119,7 +119,7 @@ const serviceWebsite = {
       const check = document.getElementById('checkbox');
       const next = document.getElementById('next');
 
-  check.checked = () => {
+  check.onclick = () => {
         if (check.checked = true) {
           next.removeAttribute('disabled');
           next.addEventListener('click', (event) => {
