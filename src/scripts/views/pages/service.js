@@ -127,7 +127,7 @@ const serviceWebsite = {
             formBiodataContainer.setAttribute('id', 'hiddenForm');
             samapahFormContainer.removeAttribute('id');
           });
-        } else if (check.checked = false){
+        } else if (check.checked  = false){
           next.setAttribute('disabled');
         }
   };
