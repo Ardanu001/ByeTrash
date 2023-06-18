@@ -147,7 +147,7 @@ const serviceWebsite = {
       };
 
       const jenis = document.getElementById('jenissampah');
-      jenis.addEventListener('click', (event) => {
+      jenis.addEventListener('change', (event) => {
         event.preventDefault();
         if (jenis.value == 'Plastik') {
           document.querySelector('#harga').value = 2000;
@@ -174,7 +174,7 @@ const serviceWebsite = {
         }
 
         const jumlah = document.querySelector('#jumlah');
-        jumlah.addEventListener('click', (e) => {
+        jumlah.addEventListener('change', (e) => {
           e.preventDefault();
           const harga = parseInt(document.querySelector('#harga').value);
           const total = document.querySelector('#total');
@@ -183,9 +183,9 @@ const serviceWebsite = {
         });
 
         const trashData = [];
-        const RENDER_EVENT = 'render-book';
-        const STORAGE_KEY = 'BOOKSHELF_APPS';
-        const SAVED_EVENT = 'saved-book';
+        const RENDER_EVENT = 'render';
+        const STORAGE_KEY = 'BYETRASH_APP';
+        const SAVED_EVENT = 'saved';
 
         function generateDataObject(id, nama, alamat, namaBank, nomorRekening, email, noTelpon, jenisSampah, jumlahSampah, hargaSampah, totalHarga) {
           return {
