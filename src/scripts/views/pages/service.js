@@ -141,7 +141,6 @@ const serviceWebsite = {
 
         if (nama == '' || alamat == '' || namaBank == '' || noRekening == '' || notelpon == '' || email == ''){
           alert('Mohon Isi Data Dengan Benar');
-          const check = document.getElementById('checkbox');
           check.checked = false;
           next.disabled = true; 
         }
