@@ -119,7 +119,7 @@ const serviceWebsite = {
       const check = document.getElementById('checkbox');
       const next = document.getElementById('next');
 
-      check.onclick = () => {
+
         if (check.checked = true) {
           next.removeAttribute('disabled');
           next.addEventListener('click', (event) => {
@@ -144,10 +144,10 @@ const serviceWebsite = {
           check.checked = false;
           button.disabled = true;
         }
-      };
+  
 
       const jenis = document.getElementById('jenissampah');
-      jenis.addEventListener('load', (event) => {
+      jenis.addEventListener('change', (event) => {
         event.preventDefault();
         if (jenis.value == 'Plastik') {
           document.querySelector('#harga').value = 2000;
@@ -174,7 +174,7 @@ const serviceWebsite = {
         }
 
         const jumlah = document.querySelector('#jumlah');
-        jumlah.addEventListener('load', (e) => {
+        jumlah.addEventListener('change', (e) => {
           e.preventDefault();
           const harga = parseInt(document.querySelector('#harga').value);
           const total = document.querySelector('#total');
