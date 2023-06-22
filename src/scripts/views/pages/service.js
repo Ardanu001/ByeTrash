@@ -149,7 +149,7 @@ const serviceWebsite = {
       };
       
       const jenis = document.getElementById('jenissampah');
-      jenis.addEventListener('change', (event) => {
+      jenis.addEventListener('click', (event) => {
         event.preventDefault();
         if (jenis.value == 'Plastik') {
           document.querySelector('#harga').value = 2000;
