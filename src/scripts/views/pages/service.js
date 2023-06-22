@@ -13,15 +13,6 @@
 import seviceTemplate from '../template/serviceTemplate';
 
 const serviceWebsite = {
-  window.addEventListener("load", () => {
-      const loader = document.querySelector(".loader");
-    
-      loader.classList.add("loader-hidden");
-    
-      loader.addEventListener("transitioned", () => {
-        document.body.removeChild("loader");
-      });
-    });
   async render() {
     return `
              <section id="/servicepage"></section>
