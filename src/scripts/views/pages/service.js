@@ -104,6 +104,16 @@ const serviceWebsite = {
   },
 
   async afterRender() {
+    window.addEventListener("load", () => {
+      const loader = document.querySelector(".loader");
+    
+      loader.classList.add("loader-hidden");
+    
+      loader.addEventListener("transitioned", () => {
+        document.body.removeChild("loader");
+      });
+    });
+    
     const homeContainer = document.querySelector('#/servicepage');
     homeContainer.innerHTML = seviceTemplate();
     const button = document.getElementById('btn-tukar');
