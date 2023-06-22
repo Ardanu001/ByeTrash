@@ -15,7 +15,7 @@ import seviceTemplate from '../template/serviceTemplate';
 const serviceWebsite = {
   async render() {
     return `
-             <section id="/servicepage"></section>
+             <section id="/servicepage" class="servicepage"></section>
              <div class="tukarPage">
         <form method="post" action="addData()" id="FormTukarSampah">
         <div class="tukarPage__form_1" id="hiddenForm">
@@ -104,7 +104,7 @@ const serviceWebsite = {
   },
 
   async afterRender() {
-    const homeContainer = document.querySelector('#/servicepage');
+    const homeContainer = document.querySelector('.servicepage');
     homeContainer.innerHTML = seviceTemplate();
     const button = document.getElementById('btn-tukar');
     const formBiodataContainer = document.querySelector('.tukarPage__form_1');
